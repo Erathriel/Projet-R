@@ -40,6 +40,24 @@ function createRepFile(){
 			echo "rep : `pwd`"
 		fi
 	done
+	file=install.sh
+	if ! [ -e $file ]; then
+				echo "$file inexistant..."
+				echo "$file de install.sh..."
+				touch $file
+				echo "$file creer"
+	else
+		echo "$file deja creer"
+	fi
+	file=CMakeLists.txt
+	if ! [ -e $file ]; then
+				echo "$file inexistant..."
+				echo "$file de install.sh..."
+				touch $file
+				echo "$file creer"
+	else
+		echo "$file deja creer"
+	fi
 	echo "creation des fichiers et repertoires terminee..."
 }
 
