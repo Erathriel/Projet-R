@@ -97,7 +97,6 @@ function initCMakeLists(){
 	else
 		echo "$file deja init..."
 	fi
-	cd ..
 }
 
 function initInstall(){
@@ -111,12 +110,11 @@ function initInstall(){
 		echo "$file deja creer..."
 	fi
 	if ! [ -s $file ]; then
-		echo -e "cd build\ncmake .. -DCMAKE_INSTALL_PREFIX=~/Desktop/RPG\nmake VERBOSE=true install" > $file
+		echo -e "cmake_minimum_required( VERSION 2.8 )\nset(CMAKE_BUILD_TYPE Release)\nproject (Projet-R)\nadd_subdirectory(src)" > $file
 		echo "$file init..."
 	else
 		echo "$file deja init..."
 	fi
-	cd ..
 }
 
 # script
