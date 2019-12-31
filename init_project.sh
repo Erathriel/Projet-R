@@ -19,9 +19,9 @@ function createRepFile(){
 				echo "$file inexistant..."
 				echo "creation de $file..."
 				touch $file
-				echo "$file creer"
+				echo "$file creer..."
 			else
-				echo "$file deja creer"
+				echo "$file deja creer..."
 			fi
 			cd ..
 			echo "rep : `pwd`"
@@ -35,7 +35,7 @@ function createRepFile(){
 			echo "$file inexistant..."
 			echo "creation de $file..."
 			touch $file
-			echo "$file creer"
+			echo "$file creer..."
 			cd ..
 			echo "rep : `pwd`"
 		fi
@@ -45,22 +45,83 @@ function createRepFile(){
 				echo "$file inexistant..."
 				echo "$file de install.sh..."
 				touch $file
-				echo "$file creer"
+				echo "$file creer..."
 	else
-		echo "$file deja creer"
+		echo "$file deja creer..."
 	fi
 	file=CMakeLists.txt
 	if ! [ -e $file ]; then
 				echo "$file inexistant..."
 				echo "$file de install.sh..."
 				touch $file
-				echo "$file creer"
+				echo "$file creer..."
 	else
-		echo "$file deja creer"
+		echo "$file deja creer..."
 	fi
 	echo "creation des fichiers et repertoires terminee..."
+}
+
+function initMainCPP(){
+	cd ${tabRep[0]}
+	file=${tabFile[0]}
+	if ! [ -e $file ]; then
+				echo "$file inexistant..."
+				echo "$file de install.sh..."
+				touch $file
+				echo "$file creer..."
+	else
+		echo "$file deja creer..."
+	fi
+	if ! [ -s $file ]; then
+		echo -e "#include <iostream>\n\nint main(int argc, char * argv[]) {\n	std::cout << \"! dlrow olleH\" << std::endl;\n}" > $file
+		echo "$file init..."
+	else
+		echo "$file deja init..."
+	fi
+	cd ..
+}
+
+function initCMakeLists(){
+	file=CMakeLists.txt
+	if ! [ -e $file ]; then
+				echo "$file inexistant..."
+				echo "$file de install.sh..."
+				touch $file
+				echo "$file creer..."
+	else
+		echo "$file deja creer..."
+	fi
+	if ! [ -s $file ]; then
+		echo -e "cmake_minimum_required( VERSION 2.8 )\nset(CMAKE_BUILD_TYPE Release)\nproject (Projet-R)\nadd_subdirectory(src)" > $file
+		echo "$file init..."
+	else
+		echo "$file deja init..."
+	fi
+	cd ..
+}
+
+function initInstall(){
+	file=install.sh
+	if ! [ -e $file ]; then
+				echo "$file inexistant..."
+				echo "$file de install.sh..."
+				touch $file
+				echo "$file creer..."
+	else
+		echo "$file deja creer..."
+	fi
+	if ! [ -s $file ]; then
+		echo -e "cd build\ncmake .. -DCMAKE_INSTALL_PREFIX=~/Desktop/RPG\nmake VERBOSE=true install" > $file
+		echo "$file init..."
+	else
+		echo "$file deja init..."
+	fi
+	cd ..
 }
 
 # script
 
 createRepFile
+initMainCPP
+initCMakeLists
+initInstall
