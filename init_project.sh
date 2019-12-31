@@ -115,6 +115,7 @@ function initInstall(){
 	else
 		echo "$file deja init..."
 	fi
+	chmod +x $file
 }
 
 # script
