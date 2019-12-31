@@ -1,4 +1,6 @@
-cmake_minimum_required( VERSION 2.8 )
-set(CMAKE_BUILD_TYPE Release)
-project (Projet-R)
-add_subdirectory(src)
+#!/bin/bash
+
+#compilation et install sous linux avec exec dans bin
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=~/Desktop/Projet-R
+make VERBOSE=true install

@@ -110,7 +110,7 @@ function initInstall(){
 		echo "$file deja creer..."
 	fi
 	if ! [ -s $file ]; then
-		echo -e "cmake_minimum_required( VERSION 2.8 )\nset(CMAKE_BUILD_TYPE Release)\nproject (Projet-R)\nadd_subdirectory(src)" > $file
+		echo -e "#!/bin/bash\n\n#compilation et install sous linux avec exec dans bin\ncd build\ncmake .. -DCMAKE_INSTALL_PREFIX=~/Desktop/Projet-R\nmake VERBOSE=true install" > $file
 		echo "$file init..."
 	else
 		echo "$file deja init..."
