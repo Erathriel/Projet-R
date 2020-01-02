@@ -15,6 +15,10 @@ gf/Event.h
 -
 gf/RenderWindow.h
 -
+gf/Shapes.h
+-
+gf/Vector.h
+-
 gf/Window.h
 -
 
