@@ -6,3 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/home/erathriel/Desktop/Projet-R/src/main.cpp
+gf/Clock.h
+-
+gf/Color.h
+-
+gf/Event.h
+-
+gf/RenderWindow.h
+-
+gf/Window.h
+-
+
