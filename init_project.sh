@@ -118,9 +118,30 @@ function initInstall(){
 	chmod +x $file
 }
 
+function initCMakeListsSrc(){
+	cd src
+	file=CMakeLists.txt
+	if ! [ -e $file ]; then
+				echo "$file inexistant..."
+				echo "$file de install.sh..."
+				touch $file
+				echo "$file creer..."
+	else
+		echo "$file deja creer..."
+	fi
+	if ! [ -s $file ]; then
+		echo -e "#Exemple 1\nadd_executable (mainDemo main.cpp)\n\ninstall(PROGRAMS \${CMAKE_CURRENT_BINARY_DIR}/mainDemo\n  DESTINATION bin\n  RENAME \${CMAKE_PROJECT_NAME}-mainDemo)" > $file
+		echo "$file init..."
+	else
+		echo "$file deja init..."
+	fi
+	cd ..
+}
+
 # script
 
 createRepFile
 initMainCPP
 initCMakeLists
 initInstall
+initCMakeListsSrc
