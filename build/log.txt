@@ -1,0 +1,26 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/erathriel/Desktop/Projet-R/build
+/usr/bin/cmake -S/home/erathriel/Desktop/Projet-R -B/home/erathriel/Desktop/Projet-R/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/erathriel/Desktop/Projet-R/build/CMakeFiles /home/erathriel/Desktop/Projet-R/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1] : on entre dans le répertoire « /home/erathriel/Desktop/Projet-R/build »
+make -f src/CMakeFiles/mainDemo.dir/build.make src/CMakeFiles/mainDemo.dir/depend
+make[2] : on entre dans le répertoire « /home/erathriel/Desktop/Projet-R/build »
+cd /home/erathriel/Desktop/Projet-R/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/erathriel/Desktop/Projet-R /home/erathriel/Desktop/Projet-R/src /home/erathriel/Desktop/Projet-R/build /home/erathriel/Desktop/Projet-R/build/src /home/erathriel/Desktop/Projet-R/build/src/CMakeFiles/mainDemo.dir/DependInfo.cmake --color=
+make[2] : on quitte le répertoire « /home/erathriel/Desktop/Projet-R/build »
+make -f src/CMakeFiles/mainDemo.dir/build.make src/CMakeFiles/mainDemo.dir/build
+make[2] : on entre dans le répertoire « /home/erathriel/Desktop/Projet-R/build »
+make[2]: rien à faire pour « src/CMakeFiles/mainDemo.dir/build ».
+make[2] : on quitte le répertoire « /home/erathriel/Desktop/Projet-R/build »
+[100%] Built target mainDemo
+make[1] : on quitte le répertoire « /home/erathriel/Desktop/Projet-R/build »
+/usr/bin/cmake -E cmake_progress_start /home/erathriel/Desktop/Projet-R/build/CMakeFiles 0
+make -f CMakeFiles/Makefile2 preinstall
+make[1] : on entre dans le répertoire « /home/erathriel/Desktop/Projet-R/build »
+make[1]: rien à faire pour « preinstall ».
+make[1] : on quitte le répertoire « /home/erathriel/Desktop/Projet-R/build »
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "Release"
+-- Up-to-date: /home/erathriel/Desktop/Projet-R/bin/Projet-R
