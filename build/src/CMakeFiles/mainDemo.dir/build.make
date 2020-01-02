@@ -79,6 +79,13 @@ mainDemo_EXTERNAL_OBJECTS =
 
 src/mainDemo: src/CMakeFiles/mainDemo.dir/main.cpp.o
 src/mainDemo: src/CMakeFiles/mainDemo.dir/build.make
+src/mainDemo: /usr/local/lib/libgf0.so.0.14.0
+src/mainDemo: /usr/lib/x86_64-linux-gnu/libSDL2.so
+src/mainDemo: /usr/lib/x86_64-linux-gnu/libfreetype.so
+src/mainDemo: /usr/local/lib/libgfcore0.so.0.14.0
+src/mainDemo: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+src/mainDemo: /usr/lib/x86_64-linux-gnu/libboost_system.so
+src/mainDemo: /usr/lib/x86_64-linux-gnu/libz.so
 src/mainDemo: src/CMakeFiles/mainDemo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erathriel/Desktop/Projet-R/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable mainDemo"
 	cd /home/erathriel/Desktop/Projet-R/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mainDemo.dir/link.txt --verbose=$(VERBOSE)

@@ -1,0 +1,90 @@
+/**
+
+@namespace gf
+@brief The namespace for gf classes
+
+@namespace gf::literals
+@brief The namespace for literals
+
+@defgroup core Core classes and functions
+@brief All the core generic classes and functions.
+
+- Math: gf::Vector, gf::Matrix, gf::Range, gf::Direction, gf::Orientation, gf::Array2D
+- Geometry: gf::Rect, gf::Circ, gf::Polygon, gf::Polyline
+- Stream: gf::InputStream, gf::FileInputStream, gf::MemoryInputStream
+- Utility: gf::Clock, gf::Time, gf::Random, gf::SystemInfo, gf::Singleton, gf::Flags
+- Noise: gf::Noise2D / gf::Noise3D, gf::GradientNoise2D / gf::GradientNoise3D, gf::FractalNoise2D / gf::FractalNoise3D, gf::PerlinNoise2D / gf::PerlinNoise3D, gf::SimplexNoise2D, gf::OpenSimplexNoise2D / gf::OpenSimplexNoise3D, gf::WorleyNoise2D
+
+@defgroup window Window classes
+@brief All the classes related to window management.
+
+- Monitor management: gf::Monitor, gf::VideoMode
+- Window management: gf::Window, gf::WindowHints, gf::Coordinates
+- Input: gf::Event, gf::Control, gf::Action
+- Device: gf::Keyboard, gf::Gamepad, gf::Modifiers
+
+@defgroup graphics Graphics classes
+@brief All the classes related to graphics.
+
+- GPU Resources: gf::Shader, gf::Texture, gf::BlendMode, gf::VertexBuffer
+- Resources: gf::Image, gf::Font, gf::Animation
+- Drawables: gf::Drawable, gf::VertexArray, gf::PostProcessing, gf::Transformable, gf::Shape, gf::Curve, gf::Sprite, gf::Text, gf::NinePatch, gf::BufferedGeometry, gf::TileLayer, gf::Logo
+- Targets: gf::RenderTarget, gf::RenderWindow, gf::RenderTexture, gf::RenderPipeline, gf::View
+- Utility: gf::SpriteBatch, gf::Color, gf::ColorRamp, gf::UI, gf::GraphicsInfo
+
+@defgroup game Game classes
+@brief All the classes related to game systems and game entities
+
+- Entities and models: gf::Entity, gf::EntityContainer, gf::Model, gf::ModelContainer
+- Application messages: gf::MessageManager, gf::Message
+- Resources: gf::AssetManager, gf::ResourceCache, gf::ResourceManager, gf::TextureAtlas
+- Physics: gf::PhysicsBody, gf::PhysicsGeometry, gf::PhysicsModel
+- Animations: gf::Activity, gf::Tween
+- Geometry: gf::generateLine(), gf::midpointDisplacement1D()
+- Virtual console: gf::Console, gf::ConsoleFont, gf::ConsoleChar
+- Roguelike toolkit: gf::SquareMap, gf::SpaceTree
+
+@mainpage
+
+@tableofcontents
+
+__Gamedev Framework (gf)__ is a framework to build 2D games in C++14. It is based on [SDL](https://www.libsdl.org/) and [OpenGL ES 2.0](https://www.khronos.org/opengles/2_X/), and presents an API that is very similar to the graphics module of [SFML](http://www.sfml-dev.org/) (see @ref differences_with_sfml) with additional features. It is _not_ a [game engine](https://en.wikipedia.org/wiki/Game_engine), it is more something like a framework, similar to [libGDX](https://libgdx.badlogicgames.com/) in the Java world.
+
+Gamedev Framework (gf) is licensed under the terms and conditions of the [zlib/libpng license](https://opensource.org/licenses/Zlib).
+
+@section index_first First example
+
+@snippet snippets/doc_index.cc index
+
+@section index_documentation Documentation
+
+1. Introduction to gf
+  - @ref features
+  - @ref build_and_install
+  - @ref use
+  - @ref differences_with_sfml
+  - @ref recommanded_libraries
+2. Tutorials on gf
+  - @ref gamedev_101
+  - @ref start_game
+3. User documentation (WIP)
+  1. Core classes
+    - @ref math
+    - @ref vectors_matrices_transforms
+    - @ref id
+    - @ref singletons
+    - @ref pcg
+  2. Window classes
+    - @ref events_controls_actions
+  3. Graphics classes
+    - @ref shader
+  4. Game classes
+    - @ref messages
+
+@section source Source
+
+The source code is available on [github](https://github.com/GamedevFramework/gf).
+
+
+
+*/

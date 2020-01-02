@@ -130,7 +130,7 @@ function initCMakeListsSrc(){
 		echo "$file deja creer..."
 	fi
 	if ! [ -s $file ]; then
-		echo -e "#Exemple 1\nadd_executable (mainDemo main.cpp)\n\ninstall(PROGRAMS \${CMAKE_CURRENT_BINARY_DIR}/mainDemo\n  DESTINATION bin\n  RENAME \${CMAKE_PROJECT_NAME}-mainDemo)" > $file
+		echo -e "#Exemple 1\nadd_executable (mainDemo main.cpp)\n\ninstall(PROGRAMS \${CMAKE_CURRENT_BINARY_DIR}/mainDemo\n  DESTINATION bin\n  RENAME \${CMAKE_PROJECT_NAME})" > $file
 		echo "$file init..."
 	else
 		echo "$file deja init..."

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -O3 -DNDEBUG  
 
-CXX_DEFINES = 
+CXX_DEFINES = -DGF_SHARED
 
 CXX_INCLUDES = 
 

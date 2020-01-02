@@ -1,0 +1,41 @@
+language: cpp
+
+addons:
+  apt:
+    packages:
+      - cmake
+      - libboost-filesystem-dev
+      - libboost-dev
+      - libfreetype6-dev
+      - libsdl2-dev
+      - zlib1g-dev
+  homebrew:
+    packages:
+      - cmake
+      - boost
+      - freetype
+      - sdl2
+      - zlib
+    update: true
+
+matrix:
+  include:
+    - os: linux
+      dist: xenial
+      compiler: gcc
+    - os: linux
+      dist: xenial
+      compiler: clang
+    - os: osx
+
+branches:
+  only:
+    - master
+    - develop
+
+before_script:
+  - mkdir build
+  - cd build
+  - cmake -DCMAKE_BUILD_TYPE=Release -DGF_DEBUG=OFF -DGF_BUILD_GAMES=ON -DGF_BUILD_TOOLS=ON -DGF_SINGLE_COMPILTATION_UNIT=ON ..
+script:
+  - make && ./tests/gf_tests
