@@ -7,8 +7,8 @@ Chemin de sous-module 'library/vendor/stb' : 'c72a95d766b8cbf5514e68d3ddbf6437ac
 Chemin de sous-module 'tests/googletest' : '437e1008c97b6bf595fec85da42c6925babd96b2' extrait
 build existe...
 rep : /home/lo41/Bureau/Projet-R/lib/gf/build
--- The CXX compiler identification is GNU 7.4.0
--- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 8.3.0
+-- The C compiler identification is GNU 8.3.0
 -- Check for working CXX compiler: /usr/bin/c++
 -- Check for working CXX compiler: /usr/bin/c++ -- works
 -- Detecting CXX compiler ABI info
@@ -32,11 +32,11 @@ rep : /home/lo41/Bureau/Projet-R/lib/gf/build
 -- Looking for pthread_create in pthread - found
 -- Found Threads: TRUE  
 -- Found SDL2: /usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread  
--- Boost version: 1.65.1
+-- Boost version: 1.67.0
 -- Found the following Boost libraries:
 --   filesystem
 --   system
--- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.8.1") 
+-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.9.1") 
 -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
 -- Using GCC or Clang compiler
 -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
@@ -48,19 +48,19 @@ Scanning dependencies of target gfdev_source_file
 [  0%] Building CXX object library/CMakeFiles/gfdev_source_file.dir/graphics/tools/gfdev_source_file.cc.o
 [  1%] Linking CXX executable gfdev_source_file
 [  1%] Built target gfdev_source_file
-Scanning dependencies of target gf0_shader_headers
-[  1%] Compiling color_matrix.frag to header
-[  2%] Compiling default_alpha.frag to header
-[  2%] Compiling default.frag to header
-[  2%] Compiling default.vert to header
-[  3%] Compiling edge.frag to header
-[  3%] Compiling fxaa.frag to header
-[  3%] Built target gf0_shader_headers
 Scanning dependencies of target gf0_gamecontrollerdb
-[  3%] Compiling gamecontrollerdb.txt to header
-[  4%] Compiling gamecontrollerdb_205.txt to header
-[  4%] Compiling gamecontrollerdb_204.txt to header
-[  4%] Built target gf0_gamecontrollerdb
+[  1%] Compiling gamecontrollerdb.txt to header
+[  2%] Compiling gamecontrollerdb_205.txt to header
+[  2%] Compiling gamecontrollerdb_204.txt to header
+[  2%] Built target gf0_gamecontrollerdb
+Scanning dependencies of target gf0_shader_headers
+[  2%] Compiling color_matrix.frag to header
+[  3%] Compiling default_alpha.frag to header
+[  3%] Compiling default.frag to header
+[  3%] Compiling default.vert to header
+[  4%] Compiling edge.frag to header
+[  4%] Compiling fxaa.frag to header
+[  4%] Built target gf0_shader_headers
 Scanning dependencies of target gfcore0
 [  4%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Activities.cc.o
 [  4%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Activity.cc.o
@@ -188,150 +188,150 @@ Scanning dependencies of target 98_logo
 [ 41%] Building CXX object examples/CMakeFiles/98_logo.dir/98_logo.cc.o
 [ 42%] Linking CXX executable 98_logo
 [ 42%] Built target 98_logo
-Scanning dependencies of target 05_triangle
-[ 42%] Building CXX object examples/CMakeFiles/05_triangle.dir/05_triangle.cc.o
-[ 42%] Linking CXX executable 05_triangle
-[ 42%] Built target 05_triangle
-Scanning dependencies of target 11_curves
-[ 42%] Building CXX object examples/CMakeFiles/11_curves.dir/11_curves.cc.o
-[ 42%] Linking CXX executable 11_curves
-[ 42%] Built target 11_curves
-Scanning dependencies of target 31_pipeline
-[ 42%] Building CXX object examples/CMakeFiles/31_pipeline.dir/31_pipeline.cc.o
-[ 42%] Linking CXX executable 31_pipeline
-[ 42%] Built target 31_pipeline
-Scanning dependencies of target 10_shapes
-[ 42%] Building CXX object examples/CMakeFiles/10_shapes.dir/10_shapes.cc.o
-[ 43%] Linking CXX executable 10_shapes
-[ 43%] Built target 10_shapes
-Scanning dependencies of target 14_spritebatch
-[ 43%] Building CXX object examples/CMakeFiles/14_spritebatch.dir/14_spritebatch.cc.o
-[ 43%] Linking CXX executable 14_spritebatch
-[ 43%] Built target 14_spritebatch
-Scanning dependencies of target 18_tilelayer
-[ 44%] Building CXX object examples/CMakeFiles/18_tilelayer.dir/18_tilelayer.cc.o
-[ 44%] Linking CXX executable 18_tilelayer
-[ 44%] Built target 18_tilelayer
-Scanning dependencies of target 27_console
-[ 44%] Building CXX object examples/CMakeFiles/27_console.dir/27_console.cc.o
-[ 44%] Linking CXX executable 27_console
-[ 44%] Built target 27_console
-Scanning dependencies of target 12_sprite
-[ 45%] Building CXX object examples/CMakeFiles/12_sprite.dir/12_sprite.cc.o
-[ 45%] Linking CXX executable 12_sprite
-[ 45%] Built target 12_sprite
-Scanning dependencies of target 06_views
-[ 46%] Building CXX object examples/CMakeFiles/06_views.dir/06_views.cc.o
-[ 46%] Linking CXX executable 06_views
-[ 46%] Built target 06_views
-Scanning dependencies of target 01_monitors
-[ 46%] Building CXX object examples/CMakeFiles/01_monitors.dir/01_monitors.cc.o
-[ 47%] Linking CXX executable 01_monitors
-[ 47%] Built target 01_monitors
-Scanning dependencies of target 04_renderer
-[ 47%] Building CXX object examples/CMakeFiles/04_renderer.dir/04_renderer.cc.o
-[ 48%] Linking CXX executable 04_renderer
-[ 48%] Built target 04_renderer
-Scanning dependencies of target 08_colors
-[ 48%] Building CXX object examples/CMakeFiles/08_colors.dir/08_colors.cc.o
-[ 48%] Linking CXX executable 08_colors
-[ 48%] Built target 08_colors
-Scanning dependencies of target 26_map
-[ 49%] Building CXX object examples/CMakeFiles/26_map.dir/26_map.cc.o
-[ 49%] Linking CXX executable 26_map
-[ 49%] Built target 26_map
-Scanning dependencies of target 13_animation
-[ 49%] Building CXX object examples/CMakeFiles/13_animation.dir/13_animation.cc.o
-[ 50%] Linking CXX executable 13_animation
-[ 50%] Built target 13_animation
-Scanning dependencies of target 02_window
-[ 50%] Building CXX object examples/CMakeFiles/02_window.dir/02_window.cc.o
-[ 50%] Linking CXX executable 02_window
-[ 50%] Built target 02_window
-Scanning dependencies of target 15_atlas
-[ 51%] Building CXX object examples/CMakeFiles/15_atlas.dir/15_atlas.cc.o
-[ 51%] Linking CXX executable 15_atlas
-[ 51%] Built target 15_atlas
-Scanning dependencies of target 00_simple
-[ 51%] Building CXX object examples/CMakeFiles/00_simple.dir/00_simple.cc.o
-[ 51%] Linking CXX executable 00_simple
-[ 51%] Built target 00_simple
-Scanning dependencies of target 03_inputs
-[ 52%] Building CXX object examples/CMakeFiles/03_inputs.dir/03_inputs.cc.o
-[ 52%] Linking CXX executable 03_inputs
-[ 52%] Built target 03_inputs
-Scanning dependencies of target 21_particles
-[ 52%] Building CXX object examples/CMakeFiles/21_particles.dir/21_particles.cc.o
-[ 53%] Linking CXX executable 21_particles
-[ 53%] Built target 21_particles
-Scanning dependencies of target 07_fullscreen
-[ 53%] Building CXX object examples/CMakeFiles/07_fullscreen.dir/07_fullscreen.cc.o
-[ 54%] Linking CXX executable 07_fullscreen
-[ 54%] Built target 07_fullscreen
-Scanning dependencies of target 17_buffer
-[ 54%] Building CXX object examples/CMakeFiles/17_buffer.dir/17_buffer.cc.o
-[ 54%] Linking CXX executable 17_buffer
-[ 54%] Built target 17_buffer
-Scanning dependencies of target 19_ninepatch
-[ 54%] Building CXX object examples/CMakeFiles/19_ninepatch.dir/19_ninepatch.cc.o
-[ 54%] Linking CXX executable 19_ninepatch
-[ 54%] Built target 19_ninepatch
-Scanning dependencies of target 30_postprocessing
-[ 54%] Building CXX object examples/CMakeFiles/30_postprocessing.dir/30_postprocessing.cc.o
-[ 55%] Linking CXX executable 30_postprocessing
-[ 55%] Built target 30_postprocessing
-Scanning dependencies of target 20_framerate
-[ 56%] Building CXX object examples/CMakeFiles/20_framerate.dir/20_framerate.cc.o
-[ 56%] Linking CXX executable 20_framerate
-[ 56%] Built target 20_framerate
-Scanning dependencies of target 22_midpoint
-[ 56%] Building CXX object examples/CMakeFiles/22_midpoint.dir/22_midpoint.cc.o
-[ 56%] Linking CXX executable 22_midpoint
-[ 56%] Built target 22_midpoint
-Scanning dependencies of target 23_bresenham
-[ 57%] Building CXX object examples/CMakeFiles/23_bresenham.dir/23_bresenham.cc.o
-[ 57%] Linking CXX executable 23_bresenham
-[ 57%] Built target 23_bresenham
-Scanning dependencies of target 24_easings
-[ 57%] Building CXX object examples/CMakeFiles/24_easings.dir/24_easings.cc.o
-[ 58%] Linking CXX executable 24_easings
-[ 58%] Built target 24_easings
-Scanning dependencies of target 25_activities
-[ 58%] Building CXX object examples/CMakeFiles/25_activities.dir/25_activities.cc.o
-[ 58%] Linking CXX executable 25_activities
-[ 58%] Built target 25_activities
-Scanning dependencies of target 28_widgets
-[ 59%] Building CXX object examples/CMakeFiles/28_widgets.dir/28_widgets.cc.o
-[ 59%] Linking CXX executable 28_widgets
-[ 59%] Built target 28_widgets
-Scanning dependencies of target 32_colorblind
-[ 60%] Building CXX object examples/CMakeFiles/32_colorblind.dir/32_colorblind.cc.o
-[ 60%] Linking CXX executable 32_colorblind
-[ 60%] Built target 32_colorblind
-Scanning dependencies of target 41_collisions
-[ 60%] Building CXX object examples/CMakeFiles/41_collisions.dir/41_collisions.cc.o
-[ 60%] Linking CXX executable 41_collisions
-[ 60%] Built target 41_collisions
-Scanning dependencies of target 40_ui
-[ 60%] Building CXX object examples/CMakeFiles/40_ui.dir/40_ui.cc.o
-[ 61%] Linking CXX executable 40_ui
-[ 61%] Built target 40_ui
-Scanning dependencies of target 42_physics
-[ 62%] Building CXX object examples/CMakeFiles/42_physics.dir/42_physics.cc.o
-[ 62%] Linking CXX executable 42_physics
-[ 62%] Built target 42_physics
-Scanning dependencies of target 16_text
-[ 62%] Building CXX object examples/CMakeFiles/16_text.dir/16_text.cc.o
-[ 63%] Linking CXX executable 16_text
-[ 63%] Built target 16_text
-Scanning dependencies of target 43_points
-[ 63%] Building CXX object examples/CMakeFiles/43_points.dir/43_points.cc.o
-[ 64%] Linking CXX executable 43_points
-[ 64%] Built target 43_points
 Scanning dependencies of target 44_tmx
-[ 64%] Building CXX object examples/CMakeFiles/44_tmx.dir/44_tmx.cc.o
-[ 64%] Linking CXX executable 44_tmx
-[ 64%] Built target 44_tmx
+[ 42%] Building CXX object examples/CMakeFiles/44_tmx.dir/44_tmx.cc.o
+[ 42%] Linking CXX executable 44_tmx
+[ 42%] Built target 44_tmx
+Scanning dependencies of target 42_physics
+[ 43%] Building CXX object examples/CMakeFiles/42_physics.dir/42_physics.cc.o
+[ 43%] Linking CXX executable 42_physics
+[ 43%] Built target 42_physics
+Scanning dependencies of target 41_collisions
+[ 43%] Building CXX object examples/CMakeFiles/41_collisions.dir/41_collisions.cc.o
+[ 43%] Linking CXX executable 41_collisions
+[ 43%] Built target 41_collisions
+Scanning dependencies of target 31_pipeline
+[ 43%] Building CXX object examples/CMakeFiles/31_pipeline.dir/31_pipeline.cc.o
+[ 43%] Linking CXX executable 31_pipeline
+[ 43%] Built target 31_pipeline
+Scanning dependencies of target 32_colorblind
+[ 44%] Building CXX object examples/CMakeFiles/32_colorblind.dir/32_colorblind.cc.o
+[ 44%] Linking CXX executable 32_colorblind
+[ 44%] Built target 32_colorblind
+Scanning dependencies of target 30_postprocessing
+[ 44%] Building CXX object examples/CMakeFiles/30_postprocessing.dir/30_postprocessing.cc.o
+[ 45%] Linking CXX executable 30_postprocessing
+[ 45%] Built target 30_postprocessing
+Scanning dependencies of target 28_widgets
+[ 46%] Building CXX object examples/CMakeFiles/28_widgets.dir/28_widgets.cc.o
+[ 46%] Linking CXX executable 28_widgets
+[ 46%] Built target 28_widgets
+Scanning dependencies of target 26_map
+[ 47%] Building CXX object examples/CMakeFiles/26_map.dir/26_map.cc.o
+[ 47%] Linking CXX executable 26_map
+[ 47%] Built target 26_map
+Scanning dependencies of target 10_shapes
+[ 47%] Building CXX object examples/CMakeFiles/10_shapes.dir/10_shapes.cc.o
+[ 48%] Linking CXX executable 10_shapes
+[ 48%] Built target 10_shapes
+Scanning dependencies of target 13_animation
+[ 48%] Building CXX object examples/CMakeFiles/13_animation.dir/13_animation.cc.o
+[ 49%] Linking CXX executable 13_animation
+[ 49%] Built target 13_animation
+Scanning dependencies of target 43_points
+[ 49%] Building CXX object examples/CMakeFiles/43_points.dir/43_points.cc.o
+[ 50%] Linking CXX executable 43_points
+[ 50%] Built target 43_points
+Scanning dependencies of target 08_colors
+[ 50%] Building CXX object examples/CMakeFiles/08_colors.dir/08_colors.cc.o
+[ 50%] Linking CXX executable 08_colors
+[ 50%] Built target 08_colors
+Scanning dependencies of target 18_tilelayer
+[ 51%] Building CXX object examples/CMakeFiles/18_tilelayer.dir/18_tilelayer.cc.o
+[ 51%] Linking CXX executable 18_tilelayer
+[ 51%] Built target 18_tilelayer
+Scanning dependencies of target 24_easings
+[ 51%] Building CXX object examples/CMakeFiles/24_easings.dir/24_easings.cc.o
+[ 52%] Linking CXX executable 24_easings
+[ 52%] Built target 24_easings
+Scanning dependencies of target 11_curves
+[ 52%] Building CXX object examples/CMakeFiles/11_curves.dir/11_curves.cc.o
+[ 52%] Linking CXX executable 11_curves
+[ 52%] Built target 11_curves
+Scanning dependencies of target 06_views
+[ 53%] Building CXX object examples/CMakeFiles/06_views.dir/06_views.cc.o
+[ 53%] Linking CXX executable 06_views
+[ 53%] Built target 06_views
+Scanning dependencies of target 02_window
+[ 53%] Building CXX object examples/CMakeFiles/02_window.dir/02_window.cc.o
+[ 53%] Linking CXX executable 02_window
+[ 53%] Built target 02_window
+Scanning dependencies of target 01_monitors
+[ 53%] Building CXX object examples/CMakeFiles/01_monitors.dir/01_monitors.cc.o
+[ 54%] Linking CXX executable 01_monitors
+[ 54%] Built target 01_monitors
+Scanning dependencies of target 40_ui
+[ 54%] Building CXX object examples/CMakeFiles/40_ui.dir/40_ui.cc.o
+[ 55%] Linking CXX executable 40_ui
+[ 55%] Built target 40_ui
+Scanning dependencies of target 16_text
+[ 55%] Building CXX object examples/CMakeFiles/16_text.dir/16_text.cc.o
+[ 56%] Linking CXX executable 16_text
+[ 56%] Built target 16_text
+Scanning dependencies of target 20_framerate
+[ 57%] Building CXX object examples/CMakeFiles/20_framerate.dir/20_framerate.cc.o
+[ 57%] Linking CXX executable 20_framerate
+[ 57%] Built target 20_framerate
+Scanning dependencies of target 05_triangle
+[ 57%] Building CXX object examples/CMakeFiles/05_triangle.dir/05_triangle.cc.o
+[ 57%] Linking CXX executable 05_triangle
+[ 57%] Built target 05_triangle
+Scanning dependencies of target 07_fullscreen
+[ 57%] Building CXX object examples/CMakeFiles/07_fullscreen.dir/07_fullscreen.cc.o
+[ 58%] Linking CXX executable 07_fullscreen
+[ 58%] Built target 07_fullscreen
+Scanning dependencies of target 00_simple
+[ 58%] Building CXX object examples/CMakeFiles/00_simple.dir/00_simple.cc.o
+[ 58%] Linking CXX executable 00_simple
+[ 58%] Built target 00_simple
+Scanning dependencies of target 23_bresenham
+[ 59%] Building CXX object examples/CMakeFiles/23_bresenham.dir/23_bresenham.cc.o
+[ 59%] Linking CXX executable 23_bresenham
+[ 59%] Built target 23_bresenham
+Scanning dependencies of target 27_console
+[ 59%] Building CXX object examples/CMakeFiles/27_console.dir/27_console.cc.o
+[ 59%] Linking CXX executable 27_console
+[ 59%] Built target 27_console
+Scanning dependencies of target 25_activities
+[ 59%] Building CXX object examples/CMakeFiles/25_activities.dir/25_activities.cc.o
+[ 59%] Linking CXX executable 25_activities
+[ 59%] Built target 25_activities
+Scanning dependencies of target 12_sprite
+[ 60%] Building CXX object examples/CMakeFiles/12_sprite.dir/12_sprite.cc.o
+[ 60%] Linking CXX executable 12_sprite
+[ 60%] Built target 12_sprite
+Scanning dependencies of target 15_atlas
+[ 61%] Building CXX object examples/CMakeFiles/15_atlas.dir/15_atlas.cc.o
+[ 61%] Linking CXX executable 15_atlas
+[ 61%] Built target 15_atlas
+Scanning dependencies of target 14_spritebatch
+[ 61%] Building CXX object examples/CMakeFiles/14_spritebatch.dir/14_spritebatch.cc.o
+[ 61%] Linking CXX executable 14_spritebatch
+[ 61%] Built target 14_spritebatch
+Scanning dependencies of target 22_midpoint
+[ 61%] Building CXX object examples/CMakeFiles/22_midpoint.dir/22_midpoint.cc.o
+[ 61%] Linking CXX executable 22_midpoint
+[ 61%] Built target 22_midpoint
+Scanning dependencies of target 03_inputs
+[ 62%] Building CXX object examples/CMakeFiles/03_inputs.dir/03_inputs.cc.o
+[ 62%] Linking CXX executable 03_inputs
+[ 62%] Built target 03_inputs
+Scanning dependencies of target 04_renderer
+[ 62%] Building CXX object examples/CMakeFiles/04_renderer.dir/04_renderer.cc.o
+[ 63%] Linking CXX executable 04_renderer
+[ 63%] Built target 04_renderer
+Scanning dependencies of target 19_ninepatch
+[ 63%] Building CXX object examples/CMakeFiles/19_ninepatch.dir/19_ninepatch.cc.o
+[ 63%] Linking CXX executable 19_ninepatch
+[ 63%] Built target 19_ninepatch
+Scanning dependencies of target 17_buffer
+[ 63%] Building CXX object examples/CMakeFiles/17_buffer.dir/17_buffer.cc.o
+[ 63%] Linking CXX executable 17_buffer
+[ 63%] Built target 17_buffer
+Scanning dependencies of target 21_particles
+[ 63%] Building CXX object examples/CMakeFiles/21_particles.dir/21_particles.cc.o
+[ 64%] Linking CXX executable 21_particles
+[ 64%] Built target 21_particles
 Scanning dependencies of target gf_tests
 [ 65%] Building CXX object tests/CMakeFiles/gf_tests.dir/main.cc.o
 [ 65%] Building CXX object tests/CMakeFiles/gf_tests.dir/googletest/googletest/src/gtest-all.cc.o
@@ -357,49 +357,49 @@ Scanning dependencies of target gf_tests
 [ 71%] Building CXX object tests/CMakeFiles/gf_tests.dir/testVector4.cc.o
 [ 72%] Linking CXX executable gf_tests
 [ 72%] Built target gf_tests
-Scanning dependencies of target doc_full_template
-[ 73%] Building CXX object docs/snippets/CMakeFiles/doc_full_template.dir/doc_full_template.cc.o
-[ 73%] Linking CXX executable doc_full_template
-[ 73%] Built target doc_full_template
+Scanning dependencies of target doc_it_moves
+[ 73%] Building CXX object docs/snippets/CMakeFiles/doc_it_moves.dir/doc_it_moves.cc.o
+[ 73%] Linking CXX executable doc_it_moves
+[ 73%] Built target doc_it_moves
 Scanning dependencies of target doc_index
 [ 73%] Building CXX object docs/snippets/CMakeFiles/doc_index.dir/doc_index.cc.o
 [ 73%] Linking CXX executable doc_index
 [ 73%] Built target doc_index
-Scanning dependencies of target doc_it_moves
-[ 74%] Building CXX object docs/snippets/CMakeFiles/doc_it_moves.dir/doc_it_moves.cc.o
-[ 74%] Linking CXX executable doc_it_moves
-[ 74%] Built target doc_it_moves
-Scanning dependencies of target gfdev_doc
-[ 75%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_clock.cc.o
-[ 75%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_console.cc.o
-[ 75%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_cursor.cc.o
-[ 76%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_drawable.cc.o
-[ 76%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_entity_container.cc.o
-[ 76%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_flags.cc.o
-[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_font.cc.o
-[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_image.cc.o
-[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_sprite.cc.o
-[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_text.cc.o
-[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_texture.cc.o
-[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_ui.cc.o
-[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_view_container.cc.o
-[ 79%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_window.cc.o
-[ 79%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_struct_blend_mode.cc.o
-[ 79%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_struct_circ.cc.o
-[ 80%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_struct_event.cc.o
-[ 80%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_tutorial_id.cc.o
-[ 80%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_tutorial_messages.cc.o
-[ 81%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/main.cc.o
-[ 81%] Linking CXX executable gfdev_doc
-[ 81%] Built target gfdev_doc
-Scanning dependencies of target doc_gamedev_101
-[ 81%] Building CXX object docs/snippets/CMakeFiles/doc_gamedev_101.dir/doc_gamedev_101.cc.o
-[ 82%] Linking CXX executable doc_gamedev_101
-[ 82%] Built target doc_gamedev_101
 Scanning dependencies of target doc_simple_template
-[ 82%] Building CXX object docs/snippets/CMakeFiles/doc_simple_template.dir/doc_simple_template.cc.o
-[ 82%] Linking CXX executable doc_simple_template
-[ 82%] Built target doc_simple_template
+[ 73%] Building CXX object docs/snippets/CMakeFiles/doc_simple_template.dir/doc_simple_template.cc.o
+[ 73%] Linking CXX executable doc_simple_template
+[ 73%] Built target doc_simple_template
+Scanning dependencies of target doc_full_template
+[ 74%] Building CXX object docs/snippets/CMakeFiles/doc_full_template.dir/doc_full_template.cc.o
+[ 74%] Linking CXX executable doc_full_template
+[ 74%] Built target doc_full_template
+Scanning dependencies of target doc_gamedev_101
+[ 74%] Building CXX object docs/snippets/CMakeFiles/doc_gamedev_101.dir/doc_gamedev_101.cc.o
+[ 75%] Linking CXX executable doc_gamedev_101
+[ 75%] Built target doc_gamedev_101
+Scanning dependencies of target gfdev_doc
+[ 76%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_clock.cc.o
+[ 76%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_console.cc.o
+[ 76%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_cursor.cc.o
+[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_drawable.cc.o
+[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_entity_container.cc.o
+[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_flags.cc.o
+[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_font.cc.o
+[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_image.cc.o
+[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_sprite.cc.o
+[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_text.cc.o
+[ 79%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_texture.cc.o
+[ 79%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_ui.cc.o
+[ 79%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_view_container.cc.o
+[ 80%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_window.cc.o
+[ 80%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_struct_blend_mode.cc.o
+[ 80%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_struct_circ.cc.o
+[ 81%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_struct_event.cc.o
+[ 81%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_tutorial_id.cc.o
+[ 81%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_tutorial_messages.cc.o
+[ 82%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/main.cc.o
+[ 82%] Linking CXX executable gfdev_doc
+[ 82%] Built target gfdev_doc
 Scanning dependencies of target bank_robbery_for_dummies
 [ 82%] Building CXX object games/bank_robbery_for_dummies/CMakeFiles/bank_robbery_for_dummies.dir/code/bank_robbery_for_dummies.cc.o
 [ 82%] Building CXX object games/bank_robbery_for_dummies/CMakeFiles/bank_robbery_for_dummies.dir/code/local/Car.cc.o
@@ -481,54 +481,54 @@ Scanning dependencies of target gf_dungeons
 [100%] Linking CXX executable gf_dungeons
 [100%] Built target gf_dungeons
 [  1%] Built target gfdev_source_file
-[  3%] Built target gf0_shader_headers
-[  4%] Built target gf0_gamecontrollerdb
+[  2%] Built target gf0_gamecontrollerdb
+[  4%] Built target gf0_shader_headers
 [ 18%] Built target gfcore0
 [ 41%] Built target gf0
 [ 42%] Built target 98_logo
-[ 42%] Built target 05_triangle
-[ 42%] Built target 11_curves
-[ 42%] Built target 31_pipeline
-[ 43%] Built target 10_shapes
-[ 43%] Built target 14_spritebatch
-[ 44%] Built target 18_tilelayer
-[ 44%] Built target 27_console
-[ 45%] Built target 12_sprite
-[ 46%] Built target 06_views
-[ 47%] Built target 01_monitors
-[ 48%] Built target 04_renderer
-[ 48%] Built target 08_colors
-[ 49%] Built target 26_map
-[ 50%] Built target 13_animation
-[ 50%] Built target 02_window
-[ 51%] Built target 15_atlas
-[ 51%] Built target 00_simple
-[ 52%] Built target 03_inputs
-[ 53%] Built target 21_particles
-[ 54%] Built target 07_fullscreen
-[ 54%] Built target 17_buffer
-[ 54%] Built target 19_ninepatch
-[ 55%] Built target 30_postprocessing
-[ 56%] Built target 20_framerate
-[ 56%] Built target 22_midpoint
-[ 57%] Built target 23_bresenham
-[ 58%] Built target 24_easings
-[ 58%] Built target 25_activities
-[ 59%] Built target 28_widgets
-[ 60%] Built target 32_colorblind
-[ 60%] Built target 41_collisions
-[ 61%] Built target 40_ui
-[ 62%] Built target 42_physics
-[ 63%] Built target 16_text
-[ 64%] Built target 43_points
-[ 64%] Built target 44_tmx
+[ 42%] Built target 44_tmx
+[ 43%] Built target 42_physics
+[ 43%] Built target 41_collisions
+[ 43%] Built target 31_pipeline
+[ 44%] Built target 32_colorblind
+[ 45%] Built target 30_postprocessing
+[ 46%] Built target 28_widgets
+[ 47%] Built target 26_map
+[ 48%] Built target 10_shapes
+[ 49%] Built target 13_animation
+[ 50%] Built target 43_points
+[ 50%] Built target 08_colors
+[ 51%] Built target 18_tilelayer
+[ 52%] Built target 24_easings
+[ 52%] Built target 11_curves
+[ 53%] Built target 06_views
+[ 53%] Built target 02_window
+[ 54%] Built target 01_monitors
+[ 55%] Built target 40_ui
+[ 56%] Built target 16_text
+[ 57%] Built target 20_framerate
+[ 57%] Built target 05_triangle
+[ 58%] Built target 07_fullscreen
+[ 58%] Built target 00_simple
+[ 59%] Built target 23_bresenham
+[ 59%] Built target 27_console
+[ 59%] Built target 25_activities
+[ 60%] Built target 12_sprite
+[ 61%] Built target 15_atlas
+[ 61%] Built target 14_spritebatch
+[ 61%] Built target 22_midpoint
+[ 62%] Built target 03_inputs
+[ 63%] Built target 04_renderer
+[ 63%] Built target 19_ninepatch
+[ 63%] Built target 17_buffer
+[ 64%] Built target 21_particles
 [ 72%] Built target gf_tests
-[ 73%] Built target doc_full_template
+[ 73%] Built target doc_it_moves
 [ 73%] Built target doc_index
-[ 74%] Built target doc_it_moves
-[ 81%] Built target gfdev_doc
-[ 82%] Built target doc_gamedev_101
-[ 82%] Built target doc_simple_template
+[ 73%] Built target doc_simple_template
+[ 74%] Built target doc_full_template
+[ 75%] Built target doc_gamedev_101
+[ 82%] Built target gfdev_doc
 [ 83%] Built target bank_robbery_for_dummies
 [ 84%] Built target gf_2048
 [ 86%] Built target gf_pong
@@ -749,8 +749,8 @@ Install the project...
 -- Up-to-date: /usr/local/lib/libgfcore0.so
 -- Installing: /usr/local/lib/libgf0.so.0.14.0
 -- Up-to-date: /usr/local/lib/libgf0.so.0
--- Up-to-date: /usr/local/lib/libgf0.so
 -- Set runtime path of "/usr/local/lib/libgf0.so.0.14.0" to ""
+-- Up-to-date: /usr/local/lib/libgf0.so
 -- Installing: /usr/local/lib/cmake/gfcore/gfcoreTargets.cmake
 -- Installing: /usr/local/lib/cmake/gfcore/gfcoreTargets-relwithdebinfo.cmake
 -- Installing: /usr/local/lib/cmake/gfcore/gfcoreConfig.cmake
