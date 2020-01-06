@@ -1,33 +1,50 @@
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.8.1") 
+-- Boost version: 1.65.1
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/erathriel/Desktop/Projet-R/build
-/usr/bin/cmake -S/home/erathriel/Desktop/Projet-R -B/home/erathriel/Desktop/Projet-R/build --check-build-system CMakeFiles/Makefile.cmake 0
-/usr/bin/cmake -E cmake_progress_start /home/erathriel/Desktop/Projet-R/build/CMakeFiles /home/erathriel/Desktop/Projet-R/build/CMakeFiles/progress.marks
+-- Build files have been written to: /home/lo41/Bureau/Projet-R/build
+/usr/bin/cmake -H/home/lo41/Bureau/Projet-R -B/home/lo41/Bureau/Projet-R/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/lo41/Bureau/Projet-R/build/CMakeFiles /home/lo41/Bureau/Projet-R/build/CMakeFiles/progress.marks
 make -f CMakeFiles/Makefile2 all
-make[1] : on entre dans le répertoire « /home/erathriel/Desktop/Projet-R/build »
+make[1] : on entre dans le répertoire « /home/lo41/Bureau/Projet-R/build »
 make -f src/CMakeFiles/mainDemo.dir/build.make src/CMakeFiles/mainDemo.dir/depend
-make[2] : on entre dans le répertoire « /home/erathriel/Desktop/Projet-R/build »
-cd /home/erathriel/Desktop/Projet-R/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/erathriel/Desktop/Projet-R /home/erathriel/Desktop/Projet-R/src /home/erathriel/Desktop/Projet-R/build /home/erathriel/Desktop/Projet-R/build/src /home/erathriel/Desktop/Projet-R/build/src/CMakeFiles/mainDemo.dir/DependInfo.cmake --color=
-Dependee "/home/erathriel/Desktop/Projet-R/src/main.cpp" is newer than depender "src/CMakeFiles/mainDemo.dir/main.cpp.o".
-Clearing dependencies in "/home/erathriel/Desktop/Projet-R/build/src/CMakeFiles/mainDemo.dir/depend.make".
+make[2] : on entre dans le répertoire « /home/lo41/Bureau/Projet-R/build »
+cd /home/lo41/Bureau/Projet-R/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/lo41/Bureau/Projet-R /home/lo41/Bureau/Projet-R/src /home/lo41/Bureau/Projet-R/build /home/lo41/Bureau/Projet-R/build/src /home/lo41/Bureau/Projet-R/build/src/CMakeFiles/mainDemo.dir/DependInfo.cmake --color=
+Dependee "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/mainDemo.dir/DependInfo.cmake" is newer than depender "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/mainDemo.dir/depend.internal".
+Dependee "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/mainDemo.dir/depend.internal".
 Scanning dependencies of target mainDemo
-make[2] : on quitte le répertoire « /home/erathriel/Desktop/Projet-R/build »
+make[2] : on quitte le répertoire « /home/lo41/Bureau/Projet-R/build »
 make -f src/CMakeFiles/mainDemo.dir/build.make src/CMakeFiles/mainDemo.dir/build
-make[2] : on entre dans le répertoire « /home/erathriel/Desktop/Projet-R/build »
+make[2] : on entre dans le répertoire « /home/lo41/Bureau/Projet-R/build »
 [ 50%] Building CXX object src/CMakeFiles/mainDemo.dir/main.cpp.o
-cd /home/erathriel/Desktop/Projet-R/build/src && /usr/bin/c++  -DGF_SHARED  -O3 -DNDEBUG   -o CMakeFiles/mainDemo.dir/main.cpp.o -c /home/erathriel/Desktop/Projet-R/src/main.cpp
+cd /home/lo41/Bureau/Projet-R/build/src && /usr/bin/c++  -DGF_SHARED   -o CMakeFiles/mainDemo.dir/main.cpp.o -c /home/lo41/Bureau/Projet-R/src/main.cpp
 [100%] Linking CXX executable mainDemo
-cd /home/erathriel/Desktop/Projet-R/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/mainDemo.dir/link.txt --verbose=true
-/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/mainDemo.dir/main.cpp.o  -o mainDemo -Wl,-rpath,/usr/local/lib /usr/local/lib/libgf0.so.0.14.0 -lSDL2 -lpthread -lfreetype /usr/local/lib/libgfcore0.so.0.14.0 -lboost_filesystem -lboost_system -lz -lgcc_s -lgcc 
-make[2] : on quitte le répertoire « /home/erathriel/Desktop/Projet-R/build »
+cd /home/lo41/Bureau/Projet-R/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/mainDemo.dir/link.txt --verbose=true
+/usr/bin/c++    -rdynamic CMakeFiles/mainDemo.dir/main.cpp.o  -o mainDemo -Wl,-rpath,/usr/local/lib /usr/local/lib/libgf0.so.0.14.0 -lSDL2 -lpthread -lfreetype /usr/local/lib/libgfcore0.so.0.14.0 -lboost_filesystem -lboost_system -lz -lgcc_s -lgcc 
+make[2] : on quitte le répertoire « /home/lo41/Bureau/Projet-R/build »
 [100%] Built target mainDemo
-make[1] : on quitte le répertoire « /home/erathriel/Desktop/Projet-R/build »
-/usr/bin/cmake -E cmake_progress_start /home/erathriel/Desktop/Projet-R/build/CMakeFiles 0
+make[1] : on quitte le répertoire « /home/lo41/Bureau/Projet-R/build »
+/usr/bin/cmake -E cmake_progress_start /home/lo41/Bureau/Projet-R/build/CMakeFiles 0
 make -f CMakeFiles/Makefile2 preinstall
-make[1] : on entre dans le répertoire « /home/erathriel/Desktop/Projet-R/build »
+make[1] : on entre dans le répertoire « /home/lo41/Bureau/Projet-R/build »
 make[1]: rien à faire pour « preinstall ».
-make[1] : on quitte le répertoire « /home/erathriel/Desktop/Projet-R/build »
+make[1] : on quitte le répertoire « /home/lo41/Bureau/Projet-R/build »
 Install the project...
 /usr/bin/cmake -P cmake_install.cmake
--- Install configuration: "Release"
--- Installing: /home/erathriel/Desktop/Projet-R/bin/Projet-R
+-- Install configuration: ""
+-- Installing: /home/lo41/Desktop/Projet-R/bin/Projet-R

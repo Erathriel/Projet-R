@@ -1,0 +1,923 @@
+gf existe...
+rep : /home/lo41/Bureau/Projet-R/lib
+Chemin de sous-module 'library/vendor/gamecontrollerdb' : '01ecd1998e84d9073e527e886dfd1888eb01a44f' extrait
+Chemin de sous-module 'library/vendor/nuklear' : 'cc7a5430fb83ed5d180ce972311058e185e2d665' extrait
+Chemin de sous-module 'library/vendor/pugixml' : '5a867cb1e38960559b0636bbdc8ea57af151b1ea' extrait
+Chemin de sous-module 'library/vendor/stb' : 'c72a95d766b8cbf5514e68d3ddbf6437ac9425b1' extrait
+Chemin de sous-module 'tests/googletest' : '437e1008c97b6bf595fec85da42c6925babd96b2' extrait
+build existe...
+rep : /home/lo41/Bureau/Projet-R/lib/gf/build
+-- The CXX compiler identification is GNU 7.4.0
+-- The C compiler identification is GNU 7.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Setting build type to 'RelWithDebInfo' as none was specified.
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found SDL2: /usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread  
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   filesystem
+--   system
+-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.8.1") 
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Using GCC or Clang compiler
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Could NOT find Box2D (missing: BOX2D_LIBRARIES BOX2D_INCLUDE_DIR) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lo41/Bureau/Projet-R/lib/gf/build
+Scanning dependencies of target gfdev_source_file
+[  0%] Building CXX object library/CMakeFiles/gfdev_source_file.dir/graphics/tools/gfdev_source_file.cc.o
+[  1%] Linking CXX executable gfdev_source_file
+[  1%] Built target gfdev_source_file
+Scanning dependencies of target gf0_shader_headers
+[  1%] Compiling color_matrix.frag to header
+[  2%] Compiling default_alpha.frag to header
+[  2%] Compiling default.frag to header
+[  2%] Compiling default.vert to header
+[  3%] Compiling edge.frag to header
+[  3%] Compiling fxaa.frag to header
+[  3%] Built target gf0_shader_headers
+Scanning dependencies of target gf0_gamecontrollerdb
+[  3%] Compiling gamecontrollerdb.txt to header
+[  4%] Compiling gamecontrollerdb_205.txt to header
+[  4%] Compiling gamecontrollerdb_204.txt to header
+[  4%] Built target gf0_gamecontrollerdb
+Scanning dependencies of target gfcore0
+[  4%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Activities.cc.o
+[  4%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Activity.cc.o
+[  4%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Array2D.cc.o
+[  5%] Building CXX object library/CMakeFiles/gfcore0.dir/core/AssetManager.cc.o
+[  5%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Circ.cc.o
+[  5%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Clock.cc.o
+[  6%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Collision.cc.o
+[  6%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Color.cc.o
+[  6%] Building CXX object library/CMakeFiles/gfcore0.dir/core/ColorRamp.cc.o
+[  7%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Dice.cc.o
+[  7%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Direction.cc.o
+[  7%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Easings.cc.o
+[  8%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Flags.cc.o
+[  8%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Geometry.cc.o
+[  8%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Heightmap.cc.o
+[  9%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Image.cc.o
+[  9%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Log.cc.o
+[  9%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Map.cc.o
+[ 10%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Math.cc.o
+[ 10%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Matrix.cc.o
+[ 10%] Building CXX object library/CMakeFiles/gfcore0.dir/core/MessageManager.cc.o
+[ 10%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Model.cc.o
+[ 11%] Building CXX object library/CMakeFiles/gfcore0.dir/core/ModelContainer.cc.o
+[ 11%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Models.cc.o
+[ 11%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Move.cc.o
+[ 12%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Noise.cc.o
+[ 12%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Noises.cc.o
+[ 12%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Orientation.cc.o
+[ 13%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Path.cc.o
+[ 13%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Polygon.cc.o
+[ 13%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Polyline.cc.o
+[ 14%] Building CXX object library/CMakeFiles/gfcore0.dir/core/RandomBinaryTree.cc.o
+[ 14%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Random.cc.o
+[ 14%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Range.cc.o
+[ 15%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Rect.cc.o
+[ 15%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Serialization.cc.o
+[ 15%] Building CXX object library/CMakeFiles/gfcore0.dir/core/SerializationOps.cc.o
+[ 15%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Sleep.cc.o
+[ 16%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Spatial.cc.o
+[ 16%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Stream.cc.o
+[ 16%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Streams.cc.o
+[ 17%] Building CXX object library/CMakeFiles/gfcore0.dir/core/StringUtils.cc.o
+[ 17%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Time.cc.o
+[ 17%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Transform.cc.o
+[ 18%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Triangulation.cc.o
+[ 18%] Building CXX object library/CMakeFiles/gfcore0.dir/core/Vector.cc.o
+[ 18%] Linking CXX shared library libgfcore0.so
+[ 18%] Built target gfcore0
+Scanning dependencies of target gf0
+[ 19%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Action.cc.o
+[ 19%] Building CXX object library/CMakeFiles/gf0.dir/graphics/AnimatedSprite.cc.o
+[ 19%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Animation.cc.o
+[ 20%] Building CXX object library/CMakeFiles/gf0.dir/graphics/BasicSprite.cc.o
+[ 20%] Building CXX object library/CMakeFiles/gf0.dir/graphics/BasicText.cc.o
+[ 20%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Blend.cc.o
+[ 21%] Building CXX object library/CMakeFiles/gf0.dir/graphics/BufferedGeometry.cc.o
+[ 21%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Clipboard.cc.o
+[ 21%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Console.cc.o
+[ 22%] Building CXX object library/CMakeFiles/gf0.dir/graphics/ConsoleFont.cc.o
+[ 22%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Control.cc.o
+[ 22%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Controls.cc.o
+[ 23%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Coordinates.cc.o
+[ 23%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Cursor.cc.o
+[ 23%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Curve.cc.o
+[ 24%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Curves.cc.o
+[ 24%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Drawable.cc.o
+[ 24%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Effects.cc.o
+[ 24%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Entity.cc.o
+[ 25%] Building CXX object library/CMakeFiles/gf0.dir/graphics/EntityContainer.cc.o
+[ 25%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Font.cc.o
+[ 25%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Gamepad.cc.o
+[ 26%] Building CXX object library/CMakeFiles/gf0.dir/graphics/GraphicsHandle.cc.o
+[ 26%] Building CXX object library/CMakeFiles/gf0.dir/graphics/GraphicsInfo.cc.o
+[ 26%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Grid.cc.o
+[ 27%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Keyboard.cc.o
+[ 27%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Library.cc.o
+[ 27%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Logo.cc.o
+[ 28%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Monitor.cc.o
+[ 28%] Building CXX object library/CMakeFiles/gf0.dir/graphics/NinePatch.cc.o
+[ 28%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Particles.cc.o
+[ 29%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Paths.cc.o
+[ 29%] Building CXX object library/CMakeFiles/gf0.dir/graphics/PhysicsBody.cc.o
+[ 29%] Building CXX object library/CMakeFiles/gf0.dir/graphics/PhysicsGeometry.cc.o
+[ 29%] Building CXX object library/CMakeFiles/gf0.dir/graphics/PhysicsModel.cc.o
+[ 30%] Building CXX object library/CMakeFiles/gf0.dir/graphics/PostProcessing.cc.o
+[ 30%] Building CXX object library/CMakeFiles/gf0.dir/graphics/RenderPipeline.cc.o
+[ 30%] Building CXX object library/CMakeFiles/gf0.dir/graphics/RenderTarget.cc.o
+[ 31%] Building CXX object library/CMakeFiles/gf0.dir/graphics/RenderTexture.cc.o
+[ 31%] Building CXX object library/CMakeFiles/gf0.dir/graphics/RenderWindow.cc.o
+[ 31%] Building CXX object library/CMakeFiles/gf0.dir/graphics/ResourceManager.cc.o
+[ 32%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Scene.cc.o
+[ 32%] Building CXX object library/CMakeFiles/gf0.dir/graphics/SceneManager.cc.o
+[ 32%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Shader.cc.o
+[ 33%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Shape.cc.o
+[ 33%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Shapes.cc.o
+[ 33%] Building CXX object library/CMakeFiles/gf0.dir/graphics/SpriteBatch.cc.o
+[ 34%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Sprite.cc.o
+[ 34%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Stagger.cc.o
+[ 34%] Building CXX object library/CMakeFiles/gf0.dir/graphics/SystemInfo.cc.o
+[ 35%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Text.cc.o
+[ 35%] Building CXX object library/CMakeFiles/gf0.dir/graphics/TextureAtlas.cc.o
+[ 35%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Texture.cc.o
+[ 35%] Building CXX object library/CMakeFiles/gf0.dir/graphics/TileLayer.cc.o
+[ 36%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Tmx.cc.o
+[ 36%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Transformable.cc.o
+[ 36%] Building CXX object library/CMakeFiles/gf0.dir/graphics/UI.cc.o
+[ 37%] Building CXX object library/CMakeFiles/gf0.dir/graphics/VertexArray.cc.o
+[ 37%] Building CXX object library/CMakeFiles/gf0.dir/graphics/VertexBuffer.cc.o
+[ 37%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Vertex.cc.o
+[ 38%] Building CXX object library/CMakeFiles/gf0.dir/graphics/View.cc.o
+[ 38%] Building CXX object library/CMakeFiles/gf0.dir/graphics/ViewContainer.cc.o
+[ 38%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Views.cc.o
+[ 39%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Widget.cc.o
+[ 39%] Building CXX object library/CMakeFiles/gf0.dir/graphics/WidgetContainer.cc.o
+[ 39%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Widgets.cc.o
+[ 40%] Building CXX object library/CMakeFiles/gf0.dir/graphics/Window.cc.o
+[ 40%] Building CXX object library/CMakeFiles/gf0.dir/graphics/data/generated.cc.o
+[ 40%] Building CXX object library/CMakeFiles/gf0.dir/graphics/priv/Debug.cc.o
+[ 41%] Building CXX object library/CMakeFiles/gf0.dir/vendor/pugixml/src/pugixml.cpp.o
+[ 41%] Building CXX object library/CMakeFiles/gf0.dir/vendor/glad/gles20/src/glad.cc.o
+[ 41%] Linking CXX shared library libgf0.so
+[ 41%] Built target gf0
+Scanning dependencies of target 98_logo
+[ 41%] Building CXX object examples/CMakeFiles/98_logo.dir/98_logo.cc.o
+[ 42%] Linking CXX executable 98_logo
+[ 42%] Built target 98_logo
+Scanning dependencies of target 05_triangle
+[ 42%] Building CXX object examples/CMakeFiles/05_triangle.dir/05_triangle.cc.o
+[ 42%] Linking CXX executable 05_triangle
+[ 42%] Built target 05_triangle
+Scanning dependencies of target 11_curves
+[ 42%] Building CXX object examples/CMakeFiles/11_curves.dir/11_curves.cc.o
+[ 42%] Linking CXX executable 11_curves
+[ 42%] Built target 11_curves
+Scanning dependencies of target 31_pipeline
+[ 42%] Building CXX object examples/CMakeFiles/31_pipeline.dir/31_pipeline.cc.o
+[ 42%] Linking CXX executable 31_pipeline
+[ 42%] Built target 31_pipeline
+Scanning dependencies of target 10_shapes
+[ 42%] Building CXX object examples/CMakeFiles/10_shapes.dir/10_shapes.cc.o
+[ 43%] Linking CXX executable 10_shapes
+[ 43%] Built target 10_shapes
+Scanning dependencies of target 14_spritebatch
+[ 43%] Building CXX object examples/CMakeFiles/14_spritebatch.dir/14_spritebatch.cc.o
+[ 43%] Linking CXX executable 14_spritebatch
+[ 43%] Built target 14_spritebatch
+Scanning dependencies of target 18_tilelayer
+[ 44%] Building CXX object examples/CMakeFiles/18_tilelayer.dir/18_tilelayer.cc.o
+[ 44%] Linking CXX executable 18_tilelayer
+[ 44%] Built target 18_tilelayer
+Scanning dependencies of target 27_console
+[ 44%] Building CXX object examples/CMakeFiles/27_console.dir/27_console.cc.o
+[ 44%] Linking CXX executable 27_console
+[ 44%] Built target 27_console
+Scanning dependencies of target 12_sprite
+[ 45%] Building CXX object examples/CMakeFiles/12_sprite.dir/12_sprite.cc.o
+[ 45%] Linking CXX executable 12_sprite
+[ 45%] Built target 12_sprite
+Scanning dependencies of target 06_views
+[ 46%] Building CXX object examples/CMakeFiles/06_views.dir/06_views.cc.o
+[ 46%] Linking CXX executable 06_views
+[ 46%] Built target 06_views
+Scanning dependencies of target 01_monitors
+[ 46%] Building CXX object examples/CMakeFiles/01_monitors.dir/01_monitors.cc.o
+[ 47%] Linking CXX executable 01_monitors
+[ 47%] Built target 01_monitors
+Scanning dependencies of target 04_renderer
+[ 47%] Building CXX object examples/CMakeFiles/04_renderer.dir/04_renderer.cc.o
+[ 48%] Linking CXX executable 04_renderer
+[ 48%] Built target 04_renderer
+Scanning dependencies of target 08_colors
+[ 48%] Building CXX object examples/CMakeFiles/08_colors.dir/08_colors.cc.o
+[ 48%] Linking CXX executable 08_colors
+[ 48%] Built target 08_colors
+Scanning dependencies of target 26_map
+[ 49%] Building CXX object examples/CMakeFiles/26_map.dir/26_map.cc.o
+[ 49%] Linking CXX executable 26_map
+[ 49%] Built target 26_map
+Scanning dependencies of target 13_animation
+[ 49%] Building CXX object examples/CMakeFiles/13_animation.dir/13_animation.cc.o
+[ 50%] Linking CXX executable 13_animation
+[ 50%] Built target 13_animation
+Scanning dependencies of target 02_window
+[ 50%] Building CXX object examples/CMakeFiles/02_window.dir/02_window.cc.o
+[ 50%] Linking CXX executable 02_window
+[ 50%] Built target 02_window
+Scanning dependencies of target 15_atlas
+[ 51%] Building CXX object examples/CMakeFiles/15_atlas.dir/15_atlas.cc.o
+[ 51%] Linking CXX executable 15_atlas
+[ 51%] Built target 15_atlas
+Scanning dependencies of target 00_simple
+[ 51%] Building CXX object examples/CMakeFiles/00_simple.dir/00_simple.cc.o
+[ 51%] Linking CXX executable 00_simple
+[ 51%] Built target 00_simple
+Scanning dependencies of target 03_inputs
+[ 52%] Building CXX object examples/CMakeFiles/03_inputs.dir/03_inputs.cc.o
+[ 52%] Linking CXX executable 03_inputs
+[ 52%] Built target 03_inputs
+Scanning dependencies of target 21_particles
+[ 52%] Building CXX object examples/CMakeFiles/21_particles.dir/21_particles.cc.o
+[ 53%] Linking CXX executable 21_particles
+[ 53%] Built target 21_particles
+Scanning dependencies of target 07_fullscreen
+[ 53%] Building CXX object examples/CMakeFiles/07_fullscreen.dir/07_fullscreen.cc.o
+[ 54%] Linking CXX executable 07_fullscreen
+[ 54%] Built target 07_fullscreen
+Scanning dependencies of target 17_buffer
+[ 54%] Building CXX object examples/CMakeFiles/17_buffer.dir/17_buffer.cc.o
+[ 54%] Linking CXX executable 17_buffer
+[ 54%] Built target 17_buffer
+Scanning dependencies of target 19_ninepatch
+[ 54%] Building CXX object examples/CMakeFiles/19_ninepatch.dir/19_ninepatch.cc.o
+[ 54%] Linking CXX executable 19_ninepatch
+[ 54%] Built target 19_ninepatch
+Scanning dependencies of target 30_postprocessing
+[ 54%] Building CXX object examples/CMakeFiles/30_postprocessing.dir/30_postprocessing.cc.o
+[ 55%] Linking CXX executable 30_postprocessing
+[ 55%] Built target 30_postprocessing
+Scanning dependencies of target 20_framerate
+[ 56%] Building CXX object examples/CMakeFiles/20_framerate.dir/20_framerate.cc.o
+[ 56%] Linking CXX executable 20_framerate
+[ 56%] Built target 20_framerate
+Scanning dependencies of target 22_midpoint
+[ 56%] Building CXX object examples/CMakeFiles/22_midpoint.dir/22_midpoint.cc.o
+[ 56%] Linking CXX executable 22_midpoint
+[ 56%] Built target 22_midpoint
+Scanning dependencies of target 23_bresenham
+[ 57%] Building CXX object examples/CMakeFiles/23_bresenham.dir/23_bresenham.cc.o
+[ 57%] Linking CXX executable 23_bresenham
+[ 57%] Built target 23_bresenham
+Scanning dependencies of target 24_easings
+[ 57%] Building CXX object examples/CMakeFiles/24_easings.dir/24_easings.cc.o
+[ 58%] Linking CXX executable 24_easings
+[ 58%] Built target 24_easings
+Scanning dependencies of target 25_activities
+[ 58%] Building CXX object examples/CMakeFiles/25_activities.dir/25_activities.cc.o
+[ 58%] Linking CXX executable 25_activities
+[ 58%] Built target 25_activities
+Scanning dependencies of target 28_widgets
+[ 59%] Building CXX object examples/CMakeFiles/28_widgets.dir/28_widgets.cc.o
+[ 59%] Linking CXX executable 28_widgets
+[ 59%] Built target 28_widgets
+Scanning dependencies of target 32_colorblind
+[ 60%] Building CXX object examples/CMakeFiles/32_colorblind.dir/32_colorblind.cc.o
+[ 60%] Linking CXX executable 32_colorblind
+[ 60%] Built target 32_colorblind
+Scanning dependencies of target 41_collisions
+[ 60%] Building CXX object examples/CMakeFiles/41_collisions.dir/41_collisions.cc.o
+[ 60%] Linking CXX executable 41_collisions
+[ 60%] Built target 41_collisions
+Scanning dependencies of target 40_ui
+[ 60%] Building CXX object examples/CMakeFiles/40_ui.dir/40_ui.cc.o
+[ 61%] Linking CXX executable 40_ui
+[ 61%] Built target 40_ui
+Scanning dependencies of target 42_physics
+[ 62%] Building CXX object examples/CMakeFiles/42_physics.dir/42_physics.cc.o
+[ 62%] Linking CXX executable 42_physics
+[ 62%] Built target 42_physics
+Scanning dependencies of target 16_text
+[ 62%] Building CXX object examples/CMakeFiles/16_text.dir/16_text.cc.o
+[ 63%] Linking CXX executable 16_text
+[ 63%] Built target 16_text
+Scanning dependencies of target 43_points
+[ 63%] Building CXX object examples/CMakeFiles/43_points.dir/43_points.cc.o
+[ 64%] Linking CXX executable 43_points
+[ 64%] Built target 43_points
+Scanning dependencies of target 44_tmx
+[ 64%] Building CXX object examples/CMakeFiles/44_tmx.dir/44_tmx.cc.o
+[ 64%] Linking CXX executable 44_tmx
+[ 64%] Built target 44_tmx
+Scanning dependencies of target gf_tests
+[ 65%] Building CXX object tests/CMakeFiles/gf_tests.dir/main.cc.o
+[ 65%] Building CXX object tests/CMakeFiles/gf_tests.dir/googletest/googletest/src/gtest-all.cc.o
+[ 65%] Building CXX object tests/CMakeFiles/gf_tests.dir/testArrayRef.cc.o
+[ 66%] Building CXX object tests/CMakeFiles/gf_tests.dir/testBox.cc.o
+[ 66%] Building CXX object tests/CMakeFiles/gf_tests.dir/testBufferRef.cc.o
+[ 66%] Building CXX object tests/CMakeFiles/gf_tests.dir/testCirc.cc.o
+[ 67%] Building CXX object tests/CMakeFiles/gf_tests.dir/testDice.cc.o
+[ 67%] Building CXX object tests/CMakeFiles/gf_tests.dir/testFlags.cc.o
+[ 67%] Building CXX object tests/CMakeFiles/gf_tests.dir/testId.cc.o
+[ 67%] Building CXX object tests/CMakeFiles/gf_tests.dir/testMatrix.cc.o
+[ 68%] Building CXX object tests/CMakeFiles/gf_tests.dir/testMatrix2.cc.o
+[ 68%] Building CXX object tests/CMakeFiles/gf_tests.dir/testRange.cc.o
+[ 68%] Building CXX object tests/CMakeFiles/gf_tests.dir/testRect.cc.o
+[ 69%] Building CXX object tests/CMakeFiles/gf_tests.dir/testSerialization.cc.o
+[ 69%] Building CXX object tests/CMakeFiles/gf_tests.dir/testSingleton.cc.o
+[ 69%] Building CXX object tests/CMakeFiles/gf_tests.dir/testSpatial.cc.o
+[ 70%] Building CXX object tests/CMakeFiles/gf_tests.dir/testStringRef.cc.o
+[ 70%] Building CXX object tests/CMakeFiles/gf_tests.dir/testVector.cc.o
+[ 70%] Building CXX object tests/CMakeFiles/gf_tests.dir/testVector1.cc.o
+[ 71%] Building CXX object tests/CMakeFiles/gf_tests.dir/testVector2.cc.o
+[ 71%] Building CXX object tests/CMakeFiles/gf_tests.dir/testVector3.cc.o
+[ 71%] Building CXX object tests/CMakeFiles/gf_tests.dir/testVector4.cc.o
+[ 72%] Linking CXX executable gf_tests
+[ 72%] Built target gf_tests
+Scanning dependencies of target doc_full_template
+[ 73%] Building CXX object docs/snippets/CMakeFiles/doc_full_template.dir/doc_full_template.cc.o
+[ 73%] Linking CXX executable doc_full_template
+[ 73%] Built target doc_full_template
+Scanning dependencies of target doc_index
+[ 73%] Building CXX object docs/snippets/CMakeFiles/doc_index.dir/doc_index.cc.o
+[ 73%] Linking CXX executable doc_index
+[ 73%] Built target doc_index
+Scanning dependencies of target doc_it_moves
+[ 74%] Building CXX object docs/snippets/CMakeFiles/doc_it_moves.dir/doc_it_moves.cc.o
+[ 74%] Linking CXX executable doc_it_moves
+[ 74%] Built target doc_it_moves
+Scanning dependencies of target gfdev_doc
+[ 75%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_clock.cc.o
+[ 75%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_console.cc.o
+[ 75%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_cursor.cc.o
+[ 76%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_drawable.cc.o
+[ 76%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_entity_container.cc.o
+[ 76%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_flags.cc.o
+[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_font.cc.o
+[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_image.cc.o
+[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_sprite.cc.o
+[ 77%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_text.cc.o
+[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_texture.cc.o
+[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_ui.cc.o
+[ 78%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_view_container.cc.o
+[ 79%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_class_window.cc.o
+[ 79%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_struct_blend_mode.cc.o
+[ 79%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_struct_circ.cc.o
+[ 80%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_struct_event.cc.o
+[ 80%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_tutorial_id.cc.o
+[ 80%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/doc_tutorial_messages.cc.o
+[ 81%] Building CXX object docs/snippets/CMakeFiles/gfdev_doc.dir/main.cc.o
+[ 81%] Linking CXX executable gfdev_doc
+[ 81%] Built target gfdev_doc
+Scanning dependencies of target doc_gamedev_101
+[ 81%] Building CXX object docs/snippets/CMakeFiles/doc_gamedev_101.dir/doc_gamedev_101.cc.o
+[ 82%] Linking CXX executable doc_gamedev_101
+[ 82%] Built target doc_gamedev_101
+Scanning dependencies of target doc_simple_template
+[ 82%] Building CXX object docs/snippets/CMakeFiles/doc_simple_template.dir/doc_simple_template.cc.o
+[ 82%] Linking CXX executable doc_simple_template
+[ 82%] Built target doc_simple_template
+Scanning dependencies of target bank_robbery_for_dummies
+[ 82%] Building CXX object games/bank_robbery_for_dummies/CMakeFiles/bank_robbery_for_dummies.dir/code/bank_robbery_for_dummies.cc.o
+[ 82%] Building CXX object games/bank_robbery_for_dummies/CMakeFiles/bank_robbery_for_dummies.dir/code/local/Car.cc.o
+[ 83%] Building CXX object games/bank_robbery_for_dummies/CMakeFiles/bank_robbery_for_dummies.dir/code/local/Level.cc.o
+[ 83%] Building CXX object games/bank_robbery_for_dummies/CMakeFiles/bank_robbery_for_dummies.dir/code/local/Story.cc.o
+[ 83%] Linking CXX executable bank_robbery_for_dummies
+[ 83%] Built target bank_robbery_for_dummies
+Scanning dependencies of target gf_2048
+[ 83%] Building CXX object games/gf_2048/CMakeFiles/gf_2048.dir/code/gf_2048.cc.o
+[ 84%] Building CXX object games/gf_2048/CMakeFiles/gf_2048.dir/code/local/Board.cc.o
+[ 84%] Building CXX object games/gf_2048/CMakeFiles/gf_2048.dir/code/local/Grid.cc.o
+[ 84%] Linking CXX executable gf_2048
+[ 84%] Built target gf_2048
+Scanning dependencies of target gf_pong
+[ 84%] Building CXX object games/gf_pong/CMakeFiles/gf_pong.dir/gf_pong.cc.o
+[ 85%] Building CXX object games/gf_pong/CMakeFiles/gf_pong.dir/local/Ball.cc.o
+[ 85%] Building CXX object games/gf_pong/CMakeFiles/gf_pong.dir/local/Ground.cc.o
+[ 85%] Building CXX object games/gf_pong/CMakeFiles/gf_pong.dir/local/Paddle.cc.o
+[ 86%] Building CXX object games/gf_pong/CMakeFiles/gf_pong.dir/local/Points.cc.o
+[ 86%] Building CXX object games/gf_pong/CMakeFiles/gf_pong.dir/local/Singletons.cc.o
+[ 86%] Linking CXX executable gf_pong
+[ 86%] Built target gf_pong
+Scanning dependencies of target huaca
+[ 86%] Building CXX object games/huaca/CMakeFiles/huaca.dir/code/huaca.cc.o
+[ 86%] Building CXX object games/huaca/CMakeFiles/huaca.dir/code/local/Display.cc.o
+[ 86%] Building CXX object games/huaca/CMakeFiles/huaca.dir/code/local/Hero.cc.o
+[ 87%] Building CXX object games/huaca/CMakeFiles/huaca.dir/code/local/Level.cc.o
+[ 87%] Building CXX object games/huaca/CMakeFiles/huaca.dir/code/local/Singletons.cc.o
+[ 87%] Building CXX object games/huaca/CMakeFiles/huaca.dir/code/local/Timer.cc.o
+[ 88%] Linking CXX executable huaca
+[ 88%] Built target huaca
+Scanning dependencies of target islands
+[ 88%] Building CXX object games/islands/CMakeFiles/islands.dir/code/islands.cc.o
+[ 88%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/Compass.cc.o
+[ 89%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/DecorationManager.cc.o
+[ 89%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/Gold.cc.o
+[ 89%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/Hero.cc.o
+[ 90%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/Sea.cc.o
+[ 90%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/Singletons.cc.o
+[ 90%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/Steam.cc.o
+[ 91%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/TreasureManager.cc.o
+[ 91%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/TurretManager.cc.o
+[ 91%] Building CXX object games/islands/CMakeFiles/islands.dir/code/local/WaveManager.cc.o
+[ 92%] Linking CXX executable islands
+[ 92%] Built target islands
+Scanning dependencies of target krokodile
+[ 92%] Building CXX object games/krokodile/CMakeFiles/krokodile.dir/code/krokodile.cc.o
+[ 92%] Building CXX object games/krokodile/CMakeFiles/krokodile.dir/code/local/FinalScreen.cc.o
+[ 92%] Building CXX object games/krokodile/CMakeFiles/krokodile.dir/code/local/Hud.cc.o
+[ 93%] Building CXX object games/krokodile/CMakeFiles/krokodile.dir/code/local/Kreature.cc.o
+[ 93%] Building CXX object games/krokodile/CMakeFiles/krokodile.dir/code/local/KreatureContainer.cc.o
+[ 93%] Building CXX object games/krokodile/CMakeFiles/krokodile.dir/code/local/Map.cc.o
+[ 94%] Building CXX object games/krokodile/CMakeFiles/krokodile.dir/code/local/Singletons.cc.o
+[ 94%] Linking CXX executable krokodile
+[ 94%] Built target krokodile
+Scanning dependencies of target lux
+[ 94%] Building CXX object games/lux/CMakeFiles/lux.dir/code/lux.cc.o
+[ 95%] Building CXX object games/lux/CMakeFiles/lux.dir/code/local/Bonus.cc.o
+[ 95%] Building CXX object games/lux/CMakeFiles/lux.dir/code/local/Bullets.cc.o
+[ 95%] Building CXX object games/lux/CMakeFiles/lux.dir/code/local/Enemy.cc.o
+[ 96%] Building CXX object games/lux/CMakeFiles/lux.dir/code/local/Hero.cc.o
+[ 96%] Building CXX object games/lux/CMakeFiles/lux.dir/code/local/Particles.cc.o
+[ 96%] Building CXX object games/lux/CMakeFiles/lux.dir/code/local/Scenario.cc.o
+[ 97%] Building CXX object games/lux/CMakeFiles/lux.dir/code/local/Ship.cc.o
+[ 97%] Building CXX object games/lux/CMakeFiles/lux.dir/code/local/Shoot.cc.o
+[ 97%] Building CXX object games/lux/CMakeFiles/lux.dir/code/local/Stars.cc.o
+[ 98%] Linking CXX executable lux
+[ 98%] Built target lux
+Scanning dependencies of target gf_info
+[ 98%] Building CXX object tools/gf_info/CMakeFiles/gf_info.dir/gf_info.cc.o
+[ 98%] Linking CXX executable gf_info
+[ 98%] Built target gf_info
+Scanning dependencies of target gf_noise
+[ 99%] Building CXX object tools/gf_noise/CMakeFiles/gf_noise.dir/gf_noise.cc.o
+[ 99%] Linking CXX executable gf_noise
+[ 99%] Built target gf_noise
+Scanning dependencies of target gf_dungeons
+[100%] Building CXX object tools/gf_dungeons/CMakeFiles/gf_dungeons.dir/gf_dungeons.cc.o
+[100%] Linking CXX executable gf_dungeons
+[100%] Built target gf_dungeons
+[  1%] Built target gfdev_source_file
+[  3%] Built target gf0_shader_headers
+[  4%] Built target gf0_gamecontrollerdb
+[ 18%] Built target gfcore0
+[ 41%] Built target gf0
+[ 42%] Built target 98_logo
+[ 42%] Built target 05_triangle
+[ 42%] Built target 11_curves
+[ 42%] Built target 31_pipeline
+[ 43%] Built target 10_shapes
+[ 43%] Built target 14_spritebatch
+[ 44%] Built target 18_tilelayer
+[ 44%] Built target 27_console
+[ 45%] Built target 12_sprite
+[ 46%] Built target 06_views
+[ 47%] Built target 01_monitors
+[ 48%] Built target 04_renderer
+[ 48%] Built target 08_colors
+[ 49%] Built target 26_map
+[ 50%] Built target 13_animation
+[ 50%] Built target 02_window
+[ 51%] Built target 15_atlas
+[ 51%] Built target 00_simple
+[ 52%] Built target 03_inputs
+[ 53%] Built target 21_particles
+[ 54%] Built target 07_fullscreen
+[ 54%] Built target 17_buffer
+[ 54%] Built target 19_ninepatch
+[ 55%] Built target 30_postprocessing
+[ 56%] Built target 20_framerate
+[ 56%] Built target 22_midpoint
+[ 57%] Built target 23_bresenham
+[ 58%] Built target 24_easings
+[ 58%] Built target 25_activities
+[ 59%] Built target 28_widgets
+[ 60%] Built target 32_colorblind
+[ 60%] Built target 41_collisions
+[ 61%] Built target 40_ui
+[ 62%] Built target 42_physics
+[ 63%] Built target 16_text
+[ 64%] Built target 43_points
+[ 64%] Built target 44_tmx
+[ 72%] Built target gf_tests
+[ 73%] Built target doc_full_template
+[ 73%] Built target doc_index
+[ 74%] Built target doc_it_moves
+[ 81%] Built target gfdev_doc
+[ 82%] Built target doc_gamedev_101
+[ 82%] Built target doc_simple_template
+[ 83%] Built target bank_robbery_for_dummies
+[ 84%] Built target gf_2048
+[ 86%] Built target gf_pong
+[ 88%] Built target huaca
+[ 92%] Built target islands
+[ 94%] Built target krokodile
+[ 98%] Built target lux
+[ 98%] Built target gf_info
+[ 99%] Built target gf_noise
+[100%] Built target gf_dungeons
+Install the project...
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /usr/local/include/gf
+-- Installing: /usr/local/include/gf/Streams.h
+-- Installing: /usr/local/include/gf/VertexArray.h
+-- Installing: /usr/local/include/gf/Winding.h
+-- Installing: /usr/local/include/gf/Triangulation.h
+-- Installing: /usr/local/include/gf/Curve.h
+-- Installing: /usr/local/include/gf/AnimatedSprite.h
+-- Installing: /usr/local/include/gf/Noises.h
+-- Installing: /usr/local/include/gf/Shape.h
+-- Installing: /usr/local/include/gf/Clipboard.h
+-- Installing: /usr/local/include/gf/Unused.h
+-- Installing: /usr/local/include/gf/GF.h
+-- Installing: /usr/local/include/gf/Cursor.h
+-- Installing: /usr/local/include/gf/ResourceManager.h
+-- Installing: /usr/local/include/gf/Activity.h
+-- Installing: /usr/local/include/gf/Tween.h
+-- Installing: /usr/local/include/gf/EntityContainer.h
+-- Installing: /usr/local/include/gf/AssetManager.h
+-- Installing: /usr/local/include/gf/Alignment.h
+-- Installing: /usr/local/include/gf/PostProcessing.h
+-- Installing: /usr/local/include/gf/Array2D.h
+-- Installing: /usr/local/include/gf/BufferedGeometry.h
+-- Installing: /usr/local/include/gf/RenderTexture.h
+-- Installing: /usr/local/include/gf/GraphicsHandle.h
+-- Installing: /usr/local/include/gf/Rect.h
+-- Installing: /usr/local/include/gf/Grid.h
+-- Installing: /usr/local/include/gf/Transformable.h
+-- Installing: /usr/local/include/gf/RandomBinaryTree.h
+-- Installing: /usr/local/include/gf/TextureAtlas.h
+-- Installing: /usr/local/include/gf/Stagger.h
+-- Installing: /usr/local/include/gf/SpriteBatch.h
+-- Installing: /usr/local/include/gf/ConsoleFont.h
+-- Installing: /usr/local/include/gf/SystemInfo.h
+-- Installing: /usr/local/include/gf/ConsoleChar.h
+-- Installing: /usr/local/include/gf/Scene.h
+-- Installing: /usr/local/include/gf/Direction.h
+-- Installing: /usr/local/include/gf/Clock.h
+-- Installing: /usr/local/include/gf/Mouse.h
+-- Installing: /usr/local/include/gf/Console.h
+-- Installing: /usr/local/include/gf/WidgetContainer.h
+-- Installing: /usr/local/include/gf/Vector.h
+-- Installing: /usr/local/include/gf/Curves.h
+-- Installing: /usr/local/include/gf/BasicSprite.h
+-- Installing: /usr/local/include/gf/Singleton.h
+-- Installing: /usr/local/include/gf/Id.h
+-- Installing: /usr/local/include/gf/MessageManager.h
+-- Installing: /usr/local/include/gf/Tmx.h
+-- Installing: /usr/local/include/gf/Dice.h
+-- Installing: /usr/local/include/gf/Control.h
+-- Installing: /usr/local/include/gf/BufferRef.h
+-- Installing: /usr/local/include/gf/Queue.h
+-- Installing: /usr/local/include/gf/StringRef.h
+-- Installing: /usr/local/include/gf/Activities.h
+-- Installing: /usr/local/include/gf/Blend.h
+-- Installing: /usr/local/include/gf/GraphicsInfo.h
+-- Installing: /usr/local/include/gf/Region.h
+-- Installing: /usr/local/include/gf/RenderTarget.h
+-- Installing: /usr/local/include/gf/Noise.h
+-- Installing: /usr/local/include/gf/ViewContainer.h
+-- Installing: /usr/local/include/gf/Particles.h
+-- Installing: /usr/local/include/gf/PhysicsGeometry.h
+-- Installing: /usr/local/include/gf/RenderWindow.h
+-- Installing: /usr/local/include/gf/Heightmap.h
+-- Installing: /usr/local/include/gf/SerializationFwd.h
+-- Installing: /usr/local/include/gf/Sleep.h
+-- Installing: /usr/local/include/gf/PrimitiveType.h
+-- Installing: /usr/local/include/gf/Library.h
+-- Installing: /usr/local/include/gf/Transform.h
+-- Installing: /usr/local/include/gf/Gamepad.h
+-- Installing: /usr/local/include/gf/Rune.h
+-- Installing: /usr/local/include/gf/Flags.h
+-- Installing: /usr/local/include/gf/Portability.h
+-- Installing: /usr/local/include/gf/Move.h
+-- Installing: /usr/local/include/gf/BasicText.h
+-- Installing: /usr/local/include/gf/Orientation.h
+-- Installing: /usr/local/include/gf/VertexBuffer.h
+-- Installing: /usr/local/include/gf/StringUtils.h
+-- Installing: /usr/local/include/gf/Monitor.h
+-- Installing: /usr/local/include/gf/Stream.h
+-- Installing: /usr/local/include/gf/VectorOps.h
+-- Installing: /usr/local/include/gf/Models.h
+-- Installing: /usr/local/include/gf/Circ.h
+-- Installing: /usr/local/include/gf/Widget.h
+-- Installing: /usr/local/include/gf/Image.h
+-- Installing: /usr/local/include/gf/Model.h
+-- Installing: /usr/local/include/gf/Texture.h
+-- Installing: /usr/local/include/gf/Text.h
+-- Installing: /usr/local/include/gf/Collision.h
+-- Installing: /usr/local/include/gf/Ref.h
+-- Installing: /usr/local/include/gf/Event.h
+-- Installing: /usr/local/include/gf/Message.h
+-- Installing: /usr/local/include/gf/Random.h
+-- Installing: /usr/local/include/gf/TileLayer.h
+-- Installing: /usr/local/include/gf/Sprite.h
+-- Installing: /usr/local/include/gf/Shader.h
+-- Installing: /usr/local/include/gf/Path.h
+-- Installing: /usr/local/include/gf/Matrix.h
+-- Installing: /usr/local/include/gf/Coordinates.h
+-- Installing: /usr/local/include/gf/Window.h
+-- Installing: /usr/local/include/gf/Effect.h
+-- Installing: /usr/local/include/gf/Types.h
+-- Installing: /usr/local/include/gf/Action.h
+-- Installing: /usr/local/include/gf/Spatial.h
+-- Installing: /usr/local/include/gf/UI.h
+-- Installing: /usr/local/include/gf/Color.h
+-- Installing: /usr/local/include/gf/Log.h
+-- Installing: /usr/local/include/gf/Flip.h
+-- Installing: /usr/local/include/gf/Ball.h
+-- Installing: /usr/local/include/gf/Serialization.h
+-- Installing: /usr/local/include/gf/ArrayRef.h
+-- Installing: /usr/local/include/gf/ModelContainer.h
+-- Installing: /usr/local/include/gf/Map.h
+-- Installing: /usr/local/include/gf/Font.h
+-- Installing: /usr/local/include/gf/Polygon.h
+-- Installing: /usr/local/include/gf/Shapes.h
+-- Installing: /usr/local/include/gf/Widgets.h
+-- Installing: /usr/local/include/gf/Controls.h
+-- Installing: /usr/local/include/gf/Paths.h
+-- Installing: /usr/local/include/gf/Math.h
+-- Installing: /usr/local/include/gf/NinePatch.h
+-- Installing: /usr/local/include/gf/Effects.h
+-- Installing: /usr/local/include/gf/RenderPipeline.h
+-- Installing: /usr/local/include/gf/ColorRamp.h
+-- Installing: /usr/local/include/gf/SerializationOps.h
+-- Installing: /usr/local/include/gf/RenderStates.h
+-- Installing: /usr/local/include/gf/Keyboard.h
+-- Installing: /usr/local/include/gf/PhysicsModel.h
+-- Installing: /usr/local/include/gf/Quarter.h
+-- Installing: /usr/local/include/gf/Box.h
+-- Installing: /usr/local/include/gf/Geometry.h
+-- Installing: /usr/local/include/gf/Polyline.h
+-- Installing: /usr/local/include/gf/Views.h
+-- Installing: /usr/local/include/gf/Easings.h
+-- Installing: /usr/local/include/gf/Range.h
+-- Installing: /usr/local/include/gf/Vertex.h
+-- Installing: /usr/local/include/gf/View.h
+-- Installing: /usr/local/include/gf/Entity.h
+-- Installing: /usr/local/include/gf/Drawable.h
+-- Installing: /usr/local/include/gf/Animation.h
+-- Installing: /usr/local/include/gf/SceneManager.h
+-- Installing: /usr/local/include/gf/PhysicsBody.h
+-- Installing: /usr/local/include/gf/Logo.h
+-- Installing: /usr/local/include/gf/Anchor.h
+-- Installing: /usr/local/include/gf/Time.h
+-- Up-to-date: /usr/local/share/doc/GF/examples
+-- Installing: /usr/local/share/doc/GF/examples/11_curves.cc
+-- Up-to-date: /usr/local/share/doc/GF/examples/assets
+-- Installing: /usr/local/share/doc/GF/examples/assets/outdoor.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/terminal.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/spritesheet.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/ui.xml
+-- Installing: /usr/local/share/doc/GF/examples/assets/outdoor.tmx
+-- Installing: /usr/local/share/doc/GF/examples/assets/bricks.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/patch.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/skeleton.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/wesnoth.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/CREDITS
+-- Installing: /usr/local/share/doc/GF/examples/assets/cursor.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/bricks.xml
+-- Installing: /usr/local/share/doc/GF/examples/assets/DejaVuSans.ttf
+-- Installing: /usr/local/share/doc/GF/examples/assets/isometric_grass_and_water.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/tilelayer.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/bomb.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/ui.png
+-- Installing: /usr/local/share/doc/GF/examples/assets/isometric_staggered_grass_and_water.tmx
+-- Installing: /usr/local/share/doc/GF/examples/10_shapes.cc
+-- Installing: /usr/local/share/doc/GF/examples/04_renderer.cc
+-- Installing: /usr/local/share/doc/GF/examples/25_activities.cc
+-- Installing: /usr/local/share/doc/GF/examples/21_particles.cc
+-- Installing: /usr/local/share/doc/GF/examples/22_midpoint.cc
+-- Installing: /usr/local/share/doc/GF/examples/98_logo.cc
+-- Installing: /usr/local/share/doc/GF/examples/42_physics.cc
+-- Installing: /usr/local/share/doc/GF/examples/18_tilelayer.cc
+-- Installing: /usr/local/share/doc/GF/examples/43_points.cc
+-- Installing: /usr/local/share/doc/GF/examples/31_pipeline.cc
+-- Installing: /usr/local/share/doc/GF/examples/01_monitors.cc
+-- Installing: /usr/local/share/doc/GF/examples/26_map.cc
+-- Installing: /usr/local/share/doc/GF/examples/15_atlas.cc
+-- Installing: /usr/local/share/doc/GF/examples/30_postprocessing.cc
+-- Installing: /usr/local/share/doc/GF/examples/03_inputs.cc
+-- Installing: /usr/local/share/doc/GF/examples/06_views.cc
+-- Installing: /usr/local/share/doc/GF/examples/23_bresenham.cc
+-- Installing: /usr/local/share/doc/GF/examples/14_spritebatch.cc
+-- Installing: /usr/local/share/doc/GF/examples/32_colorblind.cc
+-- Installing: /usr/local/share/doc/GF/examples/13_animation.cc
+-- Installing: /usr/local/share/doc/GF/examples/20_framerate.cc
+-- Installing: /usr/local/share/doc/GF/examples/08_colors.cc
+-- Installing: /usr/local/share/doc/GF/examples/19_ninepatch.cc
+-- Installing: /usr/local/share/doc/GF/examples/44_tmx.cc
+-- Installing: /usr/local/share/doc/GF/examples/00_simple.cc
+-- Installing: /usr/local/share/doc/GF/examples/12_sprite.cc
+-- Installing: /usr/local/share/doc/GF/examples/27_console.cc
+-- Installing: /usr/local/share/doc/GF/examples/07_fullscreen.cc
+-- Installing: /usr/local/share/doc/GF/examples/02_window.cc
+-- Installing: /usr/local/share/doc/GF/examples/24_easings.cc
+-- Installing: /usr/local/share/doc/GF/examples/40_ui.cc
+-- Installing: /usr/local/share/doc/GF/examples/28_widgets.cc
+-- Installing: /usr/local/share/doc/GF/examples/17_buffer.cc
+-- Installing: /usr/local/share/doc/GF/examples/16_text.cc
+-- Installing: /usr/local/share/doc/GF/examples/41_collisions.cc
+-- Installing: /usr/local/share/doc/GF/examples/05_triangle.cc
+-- Up-to-date: /usr/local/share/gf_tools
+-- Installing: /usr/local/share/gf_tools/DroidSans.ttf
+-- Installing: /usr/local/lib/libgfcore0.so.0.14.0
+-- Up-to-date: /usr/local/lib/libgfcore0.so.0
+-- Up-to-date: /usr/local/lib/libgfcore0.so
+-- Installing: /usr/local/lib/libgf0.so.0.14.0
+-- Up-to-date: /usr/local/lib/libgf0.so.0
+-- Up-to-date: /usr/local/lib/libgf0.so
+-- Set runtime path of "/usr/local/lib/libgf0.so.0.14.0" to ""
+-- Installing: /usr/local/lib/cmake/gfcore/gfcoreTargets.cmake
+-- Installing: /usr/local/lib/cmake/gfcore/gfcoreTargets-relwithdebinfo.cmake
+-- Installing: /usr/local/lib/cmake/gfcore/gfcoreConfig.cmake
+-- Installing: /usr/local/lib/cmake/gf/gfTargets.cmake
+-- Installing: /usr/local/lib/cmake/gf/gfTargets-relwithdebinfo.cmake
+-- Installing: /usr/local/lib/cmake/gf/gfConfig.cmake
+-- Installing: /usr/local/share/doc/GF/examples/00_simple
+-- Set runtime path of "/usr/local/share/doc/GF/examples/00_simple" to ""
+-- Installing: /usr/local/share/doc/GF/examples/01_monitors
+-- Set runtime path of "/usr/local/share/doc/GF/examples/01_monitors" to ""
+-- Installing: /usr/local/share/doc/GF/examples/02_window
+-- Set runtime path of "/usr/local/share/doc/GF/examples/02_window" to ""
+-- Installing: /usr/local/share/doc/GF/examples/03_inputs
+-- Set runtime path of "/usr/local/share/doc/GF/examples/03_inputs" to ""
+-- Installing: /usr/local/share/doc/GF/examples/04_renderer
+-- Set runtime path of "/usr/local/share/doc/GF/examples/04_renderer" to ""
+-- Installing: /usr/local/share/doc/GF/examples/05_triangle
+-- Set runtime path of "/usr/local/share/doc/GF/examples/05_triangle" to ""
+-- Installing: /usr/local/share/doc/GF/examples/06_views
+-- Set runtime path of "/usr/local/share/doc/GF/examples/06_views" to ""
+-- Installing: /usr/local/share/doc/GF/examples/07_fullscreen
+-- Set runtime path of "/usr/local/share/doc/GF/examples/07_fullscreen" to ""
+-- Installing: /usr/local/share/doc/GF/examples/08_colors
+-- Set runtime path of "/usr/local/share/doc/GF/examples/08_colors" to ""
+-- Installing: /usr/local/share/doc/GF/examples/10_shapes
+-- Set runtime path of "/usr/local/share/doc/GF/examples/10_shapes" to ""
+-- Installing: /usr/local/share/doc/GF/examples/11_curves
+-- Set runtime path of "/usr/local/share/doc/GF/examples/11_curves" to ""
+-- Installing: /usr/local/share/doc/GF/examples/12_sprite
+-- Set runtime path of "/usr/local/share/doc/GF/examples/12_sprite" to ""
+-- Installing: /usr/local/share/doc/GF/examples/13_animation
+-- Set runtime path of "/usr/local/share/doc/GF/examples/13_animation" to ""
+-- Installing: /usr/local/share/doc/GF/examples/14_spritebatch
+-- Set runtime path of "/usr/local/share/doc/GF/examples/14_spritebatch" to ""
+-- Installing: /usr/local/share/doc/GF/examples/15_atlas
+-- Set runtime path of "/usr/local/share/doc/GF/examples/15_atlas" to ""
+-- Installing: /usr/local/share/doc/GF/examples/16_text
+-- Set runtime path of "/usr/local/share/doc/GF/examples/16_text" to ""
+-- Installing: /usr/local/share/doc/GF/examples/17_buffer
+-- Set runtime path of "/usr/local/share/doc/GF/examples/17_buffer" to ""
+-- Installing: /usr/local/share/doc/GF/examples/18_tilelayer
+-- Set runtime path of "/usr/local/share/doc/GF/examples/18_tilelayer" to ""
+-- Installing: /usr/local/share/doc/GF/examples/19_ninepatch
+-- Set runtime path of "/usr/local/share/doc/GF/examples/19_ninepatch" to ""
+-- Installing: /usr/local/share/doc/GF/examples/20_framerate
+-- Set runtime path of "/usr/local/share/doc/GF/examples/20_framerate" to ""
+-- Installing: /usr/local/share/doc/GF/examples/21_particles
+-- Set runtime path of "/usr/local/share/doc/GF/examples/21_particles" to ""
+-- Installing: /usr/local/share/doc/GF/examples/22_midpoint
+-- Set runtime path of "/usr/local/share/doc/GF/examples/22_midpoint" to ""
+-- Installing: /usr/local/share/doc/GF/examples/23_bresenham
+-- Set runtime path of "/usr/local/share/doc/GF/examples/23_bresenham" to ""
+-- Installing: /usr/local/share/doc/GF/examples/24_easings
+-- Set runtime path of "/usr/local/share/doc/GF/examples/24_easings" to ""
+-- Installing: /usr/local/share/doc/GF/examples/25_activities
+-- Set runtime path of "/usr/local/share/doc/GF/examples/25_activities" to ""
+-- Installing: /usr/local/share/doc/GF/examples/26_map
+-- Set runtime path of "/usr/local/share/doc/GF/examples/26_map" to ""
+-- Installing: /usr/local/share/doc/GF/examples/27_console
+-- Set runtime path of "/usr/local/share/doc/GF/examples/27_console" to ""
+-- Installing: /usr/local/share/doc/GF/examples/28_widgets
+-- Set runtime path of "/usr/local/share/doc/GF/examples/28_widgets" to ""
+-- Installing: /usr/local/share/doc/GF/examples/30_postprocessing
+-- Set runtime path of "/usr/local/share/doc/GF/examples/30_postprocessing" to ""
+-- Installing: /usr/local/share/doc/GF/examples/31_pipeline
+-- Set runtime path of "/usr/local/share/doc/GF/examples/31_pipeline" to ""
+-- Installing: /usr/local/share/doc/GF/examples/32_colorblind
+-- Set runtime path of "/usr/local/share/doc/GF/examples/32_colorblind" to ""
+-- Installing: /usr/local/share/doc/GF/examples/40_ui
+-- Set runtime path of "/usr/local/share/doc/GF/examples/40_ui" to ""
+-- Installing: /usr/local/share/doc/GF/examples/41_collisions
+-- Set runtime path of "/usr/local/share/doc/GF/examples/41_collisions" to ""
+-- Installing: /usr/local/share/doc/GF/examples/42_physics
+-- Set runtime path of "/usr/local/share/doc/GF/examples/42_physics" to ""
+-- Installing: /usr/local/share/doc/GF/examples/43_points
+-- Set runtime path of "/usr/local/share/doc/GF/examples/43_points" to ""
+-- Installing: /usr/local/share/doc/GF/examples/44_tmx
+-- Set runtime path of "/usr/local/share/doc/GF/examples/44_tmx" to ""
+-- Installing: /usr/local/share/doc/GF/examples/98_logo
+-- Set runtime path of "/usr/local/share/doc/GF/examples/98_logo" to ""
+-- Installing: /usr/local/games/bank_robbery_for_dummies
+-- Set runtime path of "/usr/local/games/bank_robbery_for_dummies" to ""
+-- Up-to-date: /usr/local/share/games/brfd
+-- Installing: /usr/local/share/games/brfd/flo.png
+-- Installing: /usr/local/share/games/brfd/cars.png
+-- Installing: /usr/local/share/games/brfd/JARS.png
+-- Installing: /usr/local/share/games/brfd/.gitignore
+-- Installing: /usr/local/share/games/brfd/tileset.png
+-- Installing: /usr/local/share/games/brfd/roxy.png
+-- Installing: /usr/local/share/games/brfd/OFL.txt
+-- Installing: /usr/local/share/games/brfd/Averia-Regular.ttf
+-- Installing: /usr/local/share/games/brfd/FILES
+-- Installing: /usr/local/games/gf_2048
+-- Set runtime path of "/usr/local/games/gf_2048" to ""
+-- Up-to-date: /usr/local/share/games/gf_2048
+-- Installing: /usr/local/share/games/gf_2048/ClearSans-Bold.ttf
+-- Installing: /usr/local/games/gf_pong
+-- Set runtime path of "/usr/local/games/gf_pong" to ""
+-- Installing: /usr/local/games/huaca
+-- Set runtime path of "/usr/local/games/huaca" to ""
+-- Up-to-date: /usr/local/share/games/huaca
+-- Up-to-date: /usr/local/share/games/huaca/img
+-- Installing: /usr/local/share/games/huaca/img/rune1_red.png
+-- Installing: /usr/local/share/games/huaca/img/rune0_yellow.png
+-- Installing: /usr/local/share/games/huaca/img/portal.png
+-- Installing: /usr/local/share/games/huaca/img/key_iron.png
+-- Installing: /usr/local/share/games/huaca/img/door_bronze.png
+-- Installing: /usr/local/share/games/huaca/img/run_down.png
+-- Installing: /usr/local/share/games/huaca/img/run_right.png
+-- Installing: /usr/local/share/games/huaca/img/key_silver.png
+-- Installing: /usr/local/share/games/huaca/img/key_bronze.png
+-- Installing: /usr/local/share/games/huaca/img/rune3_purple.png
+-- Installing: /usr/local/share/games/huaca/img/ground.png
+-- Installing: /usr/local/share/games/huaca/img/door_gold.png
+-- Installing: /usr/local/share/games/huaca/img/walls.png
+-- Installing: /usr/local/share/games/huaca/img/door_iron_vertical.png
+-- Installing: /usr/local/share/games/huaca/img/run_up.png
+-- Installing: /usr/local/share/games/huaca/img/door_bronze_vertical.png
+-- Installing: /usr/local/share/games/huaca/img/rune2_green.png
+-- Installing: /usr/local/share/games/huaca/img/door_silver_vertical.png
+-- Installing: /usr/local/share/games/huaca/img/door_silver.png
+-- Installing: /usr/local/share/games/huaca/img/key_gold.png
+-- Installing: /usr/local/share/games/huaca/img/static_right.png
+-- Installing: /usr/local/share/games/huaca/img/door_gold_vertical.png
+-- Installing: /usr/local/share/games/huaca/img/static_up.png
+-- Installing: /usr/local/share/games/huaca/img/run_left.png
+-- Installing: /usr/local/share/games/huaca/img/door_iron.png
+-- Installing: /usr/local/share/games/huaca/img/static_down.png
+-- Installing: /usr/local/share/games/huaca/img/static_left.png
+-- Installing: /usr/local/games/islands
+-- Set runtime path of "/usr/local/games/islands" to ""
+-- Up-to-date: /usr/local/share/games/islands
+-- Installing: /usr/local/share/games/islands/sheet.png
+-- Installing: /usr/local/share/games/islands/logo.png
+-- Installing: /usr/local/share/games/islands/blkchcry.ttf
+-- Installing: /usr/local/share/games/islands/sheet.xml
+-- Installing: /usr/local/share/games/islands/.gitignore
+-- Installing: /usr/local/share/games/islands/FILES
+-- Installing: /usr/local/games/krokodile
+-- Set runtime path of "/usr/local/games/krokodile" to ""
+-- Up-to-date: /usr/local/share/games/krokodile
+-- Installing: /usr/local/share/games/krokodile/atlas.xml
+-- Installing: /usr/local/share/games/krokodile/atlas.png
+-- Installing: /usr/local/share/games/krokodile/Gravity-Regular.otf
+-- Installing: /usr/local/share/games/krokodile/map.png
+-- Installing: /usr/local/share/games/krokodile/FILES
+-- Installing: /usr/local/games/lux
+-- Set runtime path of "/usr/local/games/lux" to ""
+-- Up-to-date: /usr/local/share/games/lux
+-- Installing: /usr/local/share/games/lux/bullet_purple.png
+-- Installing: /usr/local/share/games/lux/bullet_green.png
+-- Installing: /usr/local/share/games/lux/SulphurPoint-Regular.otf
+-- Installing: /usr/local/share/games/lux/ship_antlia.png
+-- Installing: /usr/local/share/games/lux/bonus_life.png
+-- Installing: /usr/local/share/games/lux/README.md
+-- Installing: /usr/local/share/games/lux/ship_cygnus.png
+-- Installing: /usr/local/share/games/lux/ship_bootes.png
+-- Installing: /usr/local/share/games/lux/ship_eridanus.png
+-- Installing: /usr/local/share/games/lux/bullet_blue.png
+-- Installing: /usr/local/share/games/lux/bullet_yellow.png
+-- Installing: /usr/local/share/games/lux/ship_draco.png
+-- Installing: /usr/local/share/games/lux/bonus_weapon.png
+-- Installing: /usr/local/bin/gf_info
+-- Set runtime path of "/usr/local/bin/gf_info" to ""
+-- Installing: /usr/local/bin/gf_noise
+-- Set runtime path of "/usr/local/bin/gf_noise" to ""
+-- Installing: /usr/local/bin/gf_dungeons
+-- Set runtime path of "/usr/local/bin/gf_dungeons" to ""
+build existe...
+rep : /home/lo41/Bureau/Projet-R

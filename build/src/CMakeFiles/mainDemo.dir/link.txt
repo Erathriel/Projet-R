@@ -1,1 +1,1 @@
-/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/mainDemo.dir/main.cpp.o  -o mainDemo -Wl,-rpath,/usr/local/lib /usr/local/lib/libgf0.so.0.14.0 -lSDL2 -lpthread -lfreetype /usr/local/lib/libgfcore0.so.0.14.0 -lboost_filesystem -lboost_system -lz -lgcc_s -lgcc 
+/usr/bin/c++    -rdynamic CMakeFiles/mainDemo.dir/main.cpp.o  -o mainDemo -Wl,-rpath,/usr/local/lib /usr/local/lib/libgf0.so.0.14.0 -lSDL2 -lpthread -lfreetype /usr/local/lib/libgfcore0.so.0.14.0 -lboost_filesystem -lboost_system -lz -lgcc_s -lgcc 
