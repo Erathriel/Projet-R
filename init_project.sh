@@ -61,6 +61,7 @@ function createRepFile(){
 	echo "creation des fichiers et repertoires terminee..."
 }
 
+#Ecrit un "hello world" dans le fichier main.cpp
 function initMainCPP(){
 	cd ${tabRep[0]}
 	file=${tabFile[0]}
@@ -81,6 +82,7 @@ function initMainCPP(){
 	cd ..
 }
 
+#Crée le premier CMakeLists
 function initCMakeLists(){
 	file=CMakeLists.txt
 	if ! [ -e $file ]; then
@@ -99,6 +101,7 @@ function initCMakeLists(){
 	fi
 }
 
+#Cree et ecrit le programme de install.sh
 function initInstall(){
 	file=install.sh
 	if ! [ -e $file ]; then
@@ -118,6 +121,7 @@ function initInstall(){
 	chmod +x $file
 }
 
+#Cree et ecrit le CMakeLists du dossier src
 function initCMakeListsSrc(){
 	cd src
 	file=CMakeLists.txt

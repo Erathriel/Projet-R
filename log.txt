@@ -1,3 +1,13 @@
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+cmake est déjà la version la plus récente (3.13.4-1).
+libboost-dev est déjà la version la plus récente (1.67.0.1).
+libboost-filesystem-dev est déjà la version la plus récente (1.67.0.1).
+libfreetype6-dev est déjà la version la plus récente (2.9.1-3).
+zlib1g-dev est déjà la version la plus récente (1:1.2.11.dfsg-1ubuntu2).
+libsdl2-dev est déjà la version la plus récente (2.0.9+dfsg1-1ubuntu1.19.04.1).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 4 non mis à jour.
 gf existe...
 rep : /home/lo41/Bureau/Projet-R/lib
 Chemin de sous-module 'library/vendor/gamecontrollerdb' : '01ecd1998e84d9073e527e886dfd1888eb01a44f' extrait
@@ -919,5 +929,3 @@ Install the project...
 -- Set runtime path of "/usr/local/bin/gf_noise" to ""
 -- Installing: /usr/local/bin/gf_dungeons
 -- Set runtime path of "/usr/local/bin/gf_dungeons" to ""
-build existe...
-rep : /home/lo41/Bureau/Projet-R

@@ -1,4 +1,8 @@
-./install_gf.sh
+#!/bin/bash
+
+#Installation de gf...
+./install_gf.sh > log.txt
+#Reset du rep build...
 rep=build
 if [ -d $rep ]; then
 			echo "$rep existe..."
@@ -6,4 +10,5 @@ if [ -d $rep ]; then
 			rm -rf build
 			mkdir build
 fi
-./install.sh
+#Rebuild de l'exe...
+./install.sh >> log.txt
