@@ -71,12 +71,12 @@ int main() {
   gf::RenderWindow renderer(window);
   static constexpr gf::Vector2f EmplacementRectangle(150,150);
   // entities
-  Square square(ScreenSize / 2, 50.0f, gf::Color::Red);
-  Rectangle rectangle(ScreenSize / 2, 50.0f, 70.0f, gf::Color::Blue);
+  Square square(ScreenSize / 2, 100.0f, gf::Color::Red);
+  Rectangle rectangle(EmplacementRectangle, 200.0f, 150.0f, gf::Color::Blue);
   // game loop
   gf::Clock clock;
   renderer.clear(gf::Color::Black);
-  static constexpr float Speed = 100.0f;
+  static constexpr float Speed = 300.0f;
   gf::Vector2f velocity(0, 0);
   gf::Vector2f velocity2(0, 0);
   while (window.isOpen()) {
