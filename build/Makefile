@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mainDemo
+# Target rules for targets named main
 
 # Build rule for target.
-mainDemo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mainDemo
-.PHONY : mainDemo
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-mainDemo/fast:
-	$(MAKE) -f src/CMakeFiles/mainDemo.dir/build.make src/CMakeFiles/mainDemo.dir/build
-.PHONY : mainDemo/fast
+main/fast:
+	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 # Help Target
 help:
@@ -181,7 +181,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... mainDemo"
+	@echo "... main"
 .PHONY : help
 
 

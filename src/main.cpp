@@ -33,18 +33,52 @@ private:
   float m_size;
   gf::Color4f m_color;
 };
+class Rectangle
+{
+public:
+  Rectangle(gf::Vector2f position,float length,float width, gf::Color4f color)
+  : m_position(position)
+  , m_velocity(0,0)
+  , m_length(length)
+  , m_width(width)
+  , m_color(color)
+  {
+  }
+  void setVelocity(gf::Vector2f velocity){
+    m_velocity = velocity;
+  }
+  void update(float dt){
+    m_position += dt * m_velocity;
+  }
+  void render(gf::RenderTarget& target){
+    gf::RectangleShape shape({m_length,m_width});
+    shape.setPosition(m_position);
+    shape.setColor(m_color);
+    shape.setAnchor(gf::Anchor::Center);
+    target.draw(shape);
+  }
+private:
+  gf::Vector2f m_position;
+  gf::Vector2f m_velocity;
+  float m_length;
+  float m_width;
+  gf::Color4f m_color;
+};
 int main() {
   // initialization
-  static constexpr gf::Vector2u ScreenSize(500, 500);
+  static constexpr gf::Vector2u ScreenSize(1000, 1000);
   gf::Window window("It moves", ScreenSize);
   gf::RenderWindow renderer(window);
+  static constexpr gf::Vector2f EmplacementRectangle(150,150);
   // entities
-  Square entity(ScreenSize / 2, 50.0f, gf::Color::Red);
+  Square square(ScreenSize / 2, 50.0f, gf::Color::Red);
+  Rectangle rectangle(ScreenSize / 2, 50.0f, 70.0f, gf::Color::Blue);
   // game loop
   gf::Clock clock;
   renderer.clear(gf::Color::Black);
   static constexpr float Speed = 100.0f;
   gf::Vector2f velocity(0, 0);
+  gf::Vector2f velocity2(0, 0);
   while (window.isOpen()) {
     // 1. input
     gf::Event event;
@@ -67,6 +101,18 @@ int main() {
           case gf::Keycode::Right:
               velocity.x += Speed;
             break;
+          case gf::Keycode::Z:
+              velocity2.y -= Speed;
+            break;
+          case gf::Keycode::S:
+              velocity2.y += Speed;
+            break;
+          case gf::Keycode::Q:
+              velocity2.x -= Speed;
+            break;
+          case gf::Keycode::D:
+              velocity2.x += Speed;
+            break;
           default:
             break;
         }
@@ -85,6 +131,18 @@ int main() {
           case gf::Keycode::Right:
               velocity.x -= Speed;
             break;
+          case gf::Keycode::Z:
+              velocity2.y += Speed;
+            break;
+          case gf::Keycode::S:
+              velocity2.y -= Speed;
+            break;
+          case gf::Keycode::Q:
+              velocity2.x += Speed;
+            break;
+          case gf::Keycode::D:
+              velocity2.x -= Speed;
+            break;
           default:
             break;
         }
@@ -94,13 +152,17 @@ int main() {
       }
     }
     // 2. update
-    entity.setVelocity(velocity);
+    square.setVelocity(velocity);
+    rectangle.setVelocity(velocity2);
     float dt = clock.restart().asSeconds();
-    entity.update(dt);
+    square.update(dt);
+    rectangle.update(dt);
     // 3. draw
     renderer.clear();
-    entity.render(renderer);
+    square.render(renderer);
+    rectangle.render(renderer);
     renderer.display();
+    
   }
   return 0;
 }

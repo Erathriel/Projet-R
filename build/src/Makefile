@@ -102,6 +102,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -113,16 +123,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/mainDemo.dir/rule:
-	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mainDemo.dir/rule
-.PHONY : src/CMakeFiles/mainDemo.dir/rule
+src/CMakeFiles/main.dir/rule:
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
+.PHONY : src/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-mainDemo: src/CMakeFiles/mainDemo.dir/rule
+main: src/CMakeFiles/main.dir/rule
 
-.PHONY : mainDemo
+.PHONY : main
 
 # fast build rule for target.
-mainDemo/fast:
-	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/mainDemo.dir/build.make src/CMakeFiles/mainDemo.dir/build
-.PHONY : mainDemo/fast
+main/fast:
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 main.o: main.cpp.o
 
@@ -177,7 +177,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/mainDemo.dir/build.make src/CMakeFiles/mainDemo.dir/main.cpp.o
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -186,7 +186,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/mainDemo.dir/build.make src/CMakeFiles/mainDemo.dir/main.cpp.i
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -195,7 +195,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/mainDemo.dir/build.make src/CMakeFiles/mainDemo.dir/main.cpp.s
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -207,10 +207,10 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... edit_cache"
-	@echo "... mainDemo"
+	@echo "... main"
 	@echo "... rebuild_cache"
-	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... install"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
