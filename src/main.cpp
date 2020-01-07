@@ -64,6 +64,19 @@ private:
   float m_width;
   gf::Color4f m_color;
 };
+class Circle
+{
+public:
+  Circle(gf::Vector2f position,float radius, float nbPoint, gf::Color4f color)
+  : m_position(position)
+  , m_velocity(0,0)
+  , m_radius(radius)
+  , m_nbPoint(nbPoint)
+  , m_color(color)
+  {
+  }
+private:
+};
 int main() {
   // initialization
   static constexpr gf::Vector2u ScreenSize(1000, 1000);
