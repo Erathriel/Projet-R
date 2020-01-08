@@ -62,7 +62,7 @@ int main() {
   downAction.setContinuous();
   actions.addAction(downAction);
   // entities
-
+  Square square(ViewCenter,30.0f,gf::Color::Blue);
   gf::EntityContainer mainEntities;
   // add entities to mainEntities
   gf::EntityContainer hudEntities;

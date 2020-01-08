@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/lo41/Bureau/Projet-R/include/Square.h
+gf/Direction.h
+-
+gf/Entity.h
+-
+gf/Font.h
+-
+gf/Rect.h
+-
+
 /home/lo41/Bureau/Projet-R/src/main.cpp
 gf/Action.h
 -
@@ -25,4 +35,6 @@ gf/Views.h
 -
 gf/Window.h
 -
+../include/Square.h
+/home/lo41/Bureau/Projet-R/include/Square.h
 
