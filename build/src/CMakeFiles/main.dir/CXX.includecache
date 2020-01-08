@@ -7,17 +7,21 @@
 #IncludeRegexTransform: 
 
 /home/lo41/Bureau/Projet-R/src/main.cpp
+gf/Action.h
+-
 gf/Clock.h
 -
 gf/Color.h
+-
+gf/EntityContainer.h
 -
 gf/Event.h
 -
 gf/RenderWindow.h
 -
-gf/Shapes.h
+gf/ViewContainer.h
 -
-gf/Vector.h
+gf/Views.h
 -
 gf/Window.h
 -
