@@ -11,8 +11,8 @@
 #include "../include/Square.h"
 
 int main() {
-  static constexpr gf::Vector2u ScreenSize(1024, 576);
-  static constexpr gf::Vector2f ViewSize(100.0f, 100.0f); // dummy values
+  static constexpr gf::Vector2u ScreenSize(1024, 576); // Taille de la fenetre
+  static constexpr gf::Vector2f ViewSize(400.0f, 400.0f); // dummy values (echelle)
   static constexpr gf::Vector2f ViewCenter(0.0f, 0.0f); // dummy values
   // initialization
   gf::Window window("Game", ScreenSize);
@@ -62,7 +62,7 @@ int main() {
   downAction.setContinuous();
   actions.addAction(downAction);
   // entities
-  Square square(ViewCenter,30.0f,gf::Color::Blue);
+  Square square(ViewCenter,40.0f,gf::Color::Blue);
   gf::EntityContainer mainEntities;
   mainEntities.addEntity(square);
   // add entities to mainEntities

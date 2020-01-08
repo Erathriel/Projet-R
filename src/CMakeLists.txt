@@ -1,9 +1,16 @@
 #Exemple 1
 find_package(gf REQUIRED)
 
-add_executable (main
- Square.cpp
- main.cpp)
+if(GF_SINGLE_COMPILATION_UNIT)
+	add_executable(main
+    	main.cc
+    	XUnityBuild.cc
+	)
+else()
+	add_executable (main
+	 Square.cpp
+	 main.cpp)
+endif()
 
 target_link_libraries(main
   gf::gf0
