@@ -75,7 +75,25 @@ public:
   , m_color(color)
   {
   }
+  void setVelocity(gf::Vector2f velocity){
+    m_velocity = velocity;
+  }
+  void update(float dt){
+    m_position += dt * m_velocity;
+  }
+  void render(gf::RenderTarget& target){
+    gf::CircleShape shape({m_radius, m_nbPoint});
+    shape.setPosition(m_position);
+    shape.setColor(m_color);
+    shape.setAnchor(gf::Anchor::Center);
+    target.draw(shape);
+  }
 private:
+  gf::Vector2f m_position;
+  gf::Vector2f m_velocity;
+  float m_radius;
+  float m_nbPoint;
+  gf::Color4f m_color;
 };
 int main() {
   // initialization
@@ -83,15 +101,18 @@ int main() {
   gf::Window window("It moves", ScreenSize);
   gf::RenderWindow renderer(window);
   static constexpr gf::Vector2f EmplacementRectangle(150,150);
+  static constexpr gf::Vector2f EmplacementCercle(700,150);
   // entities
   Square square(ScreenSize / 2, 100.0f, gf::Color::Red);
   Rectangle rectangle(EmplacementRectangle, 200.0f, 150.0f, gf::Color::Blue);
+  Circle circle(EmplacementCercle, 100.0f, 700.0f, gf::Color::Yellow);
   // game loop
   gf::Clock clock;
   renderer.clear(gf::Color::Black);
   static constexpr float Speed = 300.0f;
   gf::Vector2f velocity(0, 0);
   gf::Vector2f velocity2(0, 0);
+  gf::Vector2f velocity3(0,0);
   while (window.isOpen()) {
     // 1. input
     gf::Event event;
@@ -126,6 +147,18 @@ int main() {
           case gf::Keycode::D:
               velocity2.x += Speed;
             break;
+          case gf::Keycode::O:
+              velocity3.y -= Speed;
+            break;
+          case gf::Keycode::L:
+              velocity3.y += Speed;
+            break;
+          case gf::Keycode::K:
+              velocity3.x -= Speed;
+            break;
+          case gf::Keycode::M:
+              velocity3.x += Speed;
+            break;
           default:
             break;
         }
@@ -156,6 +189,18 @@ int main() {
           case gf::Keycode::D:
               velocity2.x -= Speed;
             break;
+          case gf::Keycode::O:
+              velocity3.y += Speed;
+            break;
+          case gf::Keycode::L:
+              velocity3.y -= Speed;
+            break;
+          case gf::Keycode::K:
+              velocity3.x += Speed;
+            break;
+          case gf::Keycode::M:
+              velocity3.x -= Speed;
+            break;
           default:
             break;
         }
@@ -167,13 +212,16 @@ int main() {
     // 2. update
     square.setVelocity(velocity);
     rectangle.setVelocity(velocity2);
+    circle.setVelocity(velocity3);
     float dt = clock.restart().asSeconds();
     square.update(dt);
     rectangle.update(dt);
+    circle.update(dt);
     // 3. draw
     renderer.clear();
     square.render(renderer);
     rectangle.render(renderer);
+    circle.render(renderer);
     renderer.display();
     
   }
