@@ -23,7 +23,7 @@ public:
 		Left,
 	};
 
-	Square(gf::Vector2f position, float size, gf::Color4f color);
+	Square(float size, gf::Color4f color);
 
 	void move(Move m){
 		m_move = m;

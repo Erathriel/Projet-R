@@ -4,8 +4,8 @@
 #include <gf/Unused.h>
 #include "../include/Square.h"
 
-Square::Square(gf::Vector2f position, float size, gf::Color4f color)
-: m_position(position)
+Square::Square(float size, gf::Color4f color)
+: m_position({0.0f,0.0f})
 , m_size(size)
 , m_color(color)
 , m_move(Move::Stop)

@@ -9,6 +9,7 @@ if(GF_SINGLE_COMPILATION_UNIT)
 else()
 	add_executable (main
 	 Square.cpp
+	 Ground.cpp
 	 main.cpp)
 endif()
 

@@ -9,11 +9,12 @@
 #include <gf/Window.h>
 
 #include "../include/Square.h"
+#include "../include/Ground.h"
 
 int main() {
   static constexpr gf::Vector2u ScreenSize(1024, 576); // Taille de la fenetre
-  static constexpr gf::Vector2f ViewSize(400.0f, 400.0f); // dummy values (echelle)
-  static constexpr gf::Vector2f ViewCenter(0.0f, 0.0f); // dummy values
+  //static constexpr gf::Vector2f ViewSize(400.0f, 400.0f); // dummy values (echelle)
+  //static constexpr gf::Vector2f ViewCenter(0.0f, 0.0f); // dummy values
   // initialization
   gf::Window window("Game", ScreenSize);
   window.setVerticalSyncEnabled(true);
@@ -21,11 +22,13 @@ int main() {
   gf::RenderWindow renderer(window);
   // views
   gf::ViewContainer views;
-  gf::ExtendView mainView(ViewCenter, ViewSize);
+  //gf::ExtendView mainView(ViewCenter, ViewSize);
+  gf::FitView mainView;
   views.addView(mainView);
-  gf::ScreenView hudView;
-  views.addView(hudView);
+  //gf::ScreenView hudView;
+  //views.addView(hudView);
   views.setInitialScreenSize(ScreenSize);
+  mainView.setSize({Ground::Width, Ground::Height});
   // actions
   gf::ActionContainer actions;
 
@@ -62,8 +65,12 @@ int main() {
   downAction.setContinuous();
   actions.addAction(downAction);
   // entities
-  Square square(ViewCenter,40.0f,gf::Color::Blue);
   gf::EntityContainer mainEntities;
+
+  Ground ground;
+  mainEntities.addEntity(ground);
+
+  Square square(40.0f,gf::Color::Blue);
   mainEntities.addEntity(square);
   // add entities to mainEntities
   gf::EntityContainer hudEntities;
@@ -108,8 +115,8 @@ int main() {
     renderer.clear();
     renderer.setView(mainView);
     mainEntities.render(renderer);
-    renderer.setView(hudView);
-    hudEntities.render(renderer);
+    //renderer.setView(hudView);
+    //hudEntities.render(renderer);
     renderer.display();
     actions.reset();
   }

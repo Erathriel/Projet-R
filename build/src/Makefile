@@ -171,6 +171,33 @@ main/fast:
 	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Ground.o: Ground.cpp.o
+
+.PHONY : Ground.o
+
+# target to build an object file
+Ground.cpp.o:
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Ground.cpp.o
+.PHONY : Ground.cpp.o
+
+Ground.i: Ground.cpp.i
+
+.PHONY : Ground.i
+
+# target to preprocess a source file
+Ground.cpp.i:
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Ground.cpp.i
+.PHONY : Ground.cpp.i
+
+Ground.s: Ground.cpp.s
+
+.PHONY : Ground.s
+
+# target to generate assembly for a file
+Ground.cpp.s:
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Ground.cpp.s
+.PHONY : Ground.cpp.s
+
 Square.o: Square.cpp.o
 
 .PHONY : Square.o
@@ -238,6 +265,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install"
+	@echo "... Ground.o"
+	@echo "... Ground.i"
+	@echo "... Ground.s"
 	@echo "... Square.o"
 	@echo "... Square.i"
 	@echo "... Square.s"
