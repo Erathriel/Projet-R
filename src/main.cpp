@@ -76,7 +76,7 @@ int main() {
   gf::EntityContainer hudEntities;
   // add entities to hudEntities
   // game loop
-  renderer.clear(gf::Color::White);
+  renderer.clear(gf::Color::Yellow);
   gf::Clock clock;
   while (window.isOpen()) {
     // 1. input
