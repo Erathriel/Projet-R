@@ -7,6 +7,9 @@
 #include <gf/ViewContainer.h>
 #include <gf/Views.h>
 #include <gf/Window.h>
+
+#include "../include/Square.h"
+
 int main() {
   static constexpr gf::Vector2u ScreenSize(1024, 576);
   static constexpr gf::Vector2f ViewSize(100.0f, 100.0f); // dummy values
@@ -25,34 +28,41 @@ int main() {
   views.setInitialScreenSize(ScreenSize);
   // actions
   gf::ActionContainer actions;
+
   gf::Action closeWindowAction("Close window");
   closeWindowAction.addCloseControl();
   closeWindowAction.addKeycodeKeyControl(gf::Keycode::Escape);
   actions.addAction(closeWindowAction);
+
   gf::Action fullscreenAction("Fullscreen");
   fullscreenAction.addKeycodeKeyControl(gf::Keycode::F);
   actions.addAction(fullscreenAction);
+
   gf::Action leftAction("Left");
   leftAction.addScancodeKeyControl(gf::Scancode::A);
   leftAction.addScancodeKeyControl(gf::Scancode::Left);
   leftAction.setContinuous();
   actions.addAction(leftAction);
+
   gf::Action rightAction("Right");
   rightAction.addScancodeKeyControl(gf::Scancode::D);
   rightAction.addScancodeKeyControl(gf::Scancode::Right);
   rightAction.setContinuous();
   actions.addAction(rightAction);
+
   gf::Action upAction("Up");
   upAction.addScancodeKeyControl(gf::Scancode::W);
   upAction.addScancodeKeyControl(gf::Scancode::Up);
   upAction.setContinuous();
   actions.addAction(upAction);
+
   gf::Action downAction("Down");
   downAction.addScancodeKeyControl(gf::Scancode::S);
   downAction.addScancodeKeyControl(gf::Scancode::Down);
   downAction.setContinuous();
   actions.addAction(downAction);
   // entities
+
   gf::EntityContainer mainEntities;
   // add entities to mainEntities
   gf::EntityContainer hudEntities;
