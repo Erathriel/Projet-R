@@ -1,8 +1,8 @@
-#include "../include/Square.h"
 
 #include <gf/RenderTarget.h>
 #include <gf/Shapes.h>
 #include <gf/Unused.h>
+#include "../include/Square.h"
 
 Square::Square(gf::Vector2f position, float size, gf::Color4f color)
 : m_position(position)
@@ -38,5 +38,5 @@ void Square::render(gf::RenderTarget& target, const gf::RenderStates& states){
 	shape.setPosition(m_position);
 	shape.setAnchor(gf::Anchor::Center);
 	shape.setColor(m_color);
-	target.draw(target, states);
+	target.draw(shape, states);
 }

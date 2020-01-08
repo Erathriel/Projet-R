@@ -64,6 +64,7 @@ int main() {
   // entities
   Square square(ViewCenter,30.0f,gf::Color::Blue);
   gf::EntityContainer mainEntities;
+  mainEntities.addEntity(square);
   // add entities to mainEntities
   gf::EntityContainer hudEntities;
   // add entities to hudEntities

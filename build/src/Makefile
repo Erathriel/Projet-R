@@ -171,6 +171,33 @@ main/fast:
 	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Square.o: Square.cpp.o
+
+.PHONY : Square.o
+
+# target to build an object file
+Square.cpp.o:
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Square.cpp.o
+.PHONY : Square.cpp.o
+
+Square.i: Square.cpp.i
+
+.PHONY : Square.i
+
+# target to preprocess a source file
+Square.cpp.i:
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Square.cpp.i
+.PHONY : Square.cpp.i
+
+Square.s: Square.cpp.s
+
+.PHONY : Square.s
+
+# target to generate assembly for a file
+Square.cpp.s:
+	cd /home/lo41/Bureau/Projet-R/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Square.cpp.s
+.PHONY : Square.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -211,6 +238,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install"
+	@echo "... Square.o"
+	@echo "... Square.i"
+	@echo "... Square.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

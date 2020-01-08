@@ -5,7 +5,6 @@
 #include <gf/Entity.h>
 #include <gf/Font.h>
 #include <gf/Rect.h>
-#include <gf/Message.h>
 
 
 

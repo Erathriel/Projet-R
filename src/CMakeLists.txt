@@ -1,7 +1,9 @@
 #Exemple 1
 find_package(gf REQUIRED)
 
-add_executable (main main.cpp)
+add_executable (main
+ Square.cpp
+ main.cpp)
 
 target_link_libraries(main
   gf::gf0
