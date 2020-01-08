@@ -26,7 +26,7 @@ void Square::update(gf::Time time){
 			m_position.x += Velocity * dt;
 			break;
 		case Move::Left:
-			m_position -= Velocity * dt;
+			m_position.x -= Velocity * dt;
 			break;
 		case Move::Stop:
 			break;

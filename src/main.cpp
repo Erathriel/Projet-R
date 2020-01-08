@@ -86,14 +86,19 @@ int main() {
     }
     if (rightAction.isActive()) {
       // do something
+      square.move(Square::Move::Right);
     } else if (leftAction.isActive()) {
       // do something
+      square.move(Square::Move::Left);
     } else if (upAction.isActive()) {
       // do something
+      square.move(Square::Move::Up);
     } else if (downAction.isActive()) {
       // do something
+      square.move(Square::Move::Down);
     } else {
       // do something
+      square.move(Square::Move::Stop);
     }
     // 2. update
     gf::Time time = clock.restart();
