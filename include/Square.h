@@ -1,5 +1,5 @@
-#ifndef INCLUDE_BOARD_H
-#define INCLUDE_BOARD_H
+#ifndef INCLUDE_SQUARE_H
+#define INCLUDE_SQUARE_H
 
 #include <gf/Direction.h>
 #include <gf/Entity.h>
@@ -39,4 +39,4 @@ private:
 	Move m_move;
 };
 
-#endif // LOCAL_BOARD_H
+#endif // LOCAL_SQUARE_H

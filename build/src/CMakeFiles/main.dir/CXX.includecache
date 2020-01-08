@@ -18,6 +18,16 @@ gf/Rect.h
 gf/Message.h
 -
 
+/home/lo41/Bureau/Projet-R/src/Square.cpp
+gf/RenderTarget.h
+-
+gf/Shapes.h
+-
+gf/Unused.h
+-
+../include/Square.h
+/home/lo41/Bureau/Projet-R/include/Square.h
+
 /home/lo41/Bureau/Projet-R/src/main.cpp
 gf/Action.h
 -
