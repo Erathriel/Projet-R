@@ -19,4 +19,4 @@ target_link_libraries(main
 
 install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/main
   DESTINATION bin
-  RENAME ${CMAKE_PROJECT_NAME}.exe)
+  RENAME ${CMAKE_PROJECT_NAME})
