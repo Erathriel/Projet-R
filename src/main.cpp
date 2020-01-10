@@ -85,7 +85,7 @@ int main() {
 	mainEntities.addEntity(map);
 
 	// square
-	Square square(ViewCenter,40.0f,gf::Color::Blue);
+	Square square(ViewCenter,70.0f,gf::Color::Blue);
 	mainEntities.addEntity(square);
 
 	// HUD
