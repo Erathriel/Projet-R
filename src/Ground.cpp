@@ -12,6 +12,6 @@ void Ground::render(gf::RenderTarget& target, const gf::RenderStates& states){
 	gf::RectangleShape shape({Width, Height});
 	shape.setPosition({0.0f,0.0f});
 	shape.setAnchor(gf::Anchor::Center);
-	shape.setColor(gf::Color::Black);
+	shape.setColor(gf::Color::White);
 	target.draw(shape, states);
 }

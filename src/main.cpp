@@ -12,113 +12,147 @@
 #include "../include/Ground.h"
 
 int main() {
-  static constexpr gf::Vector2u ScreenSize(1024, 576); // Taille de la fenetre
-  //static constexpr gf::Vector2f ViewSize(400.0f, 400.0f); // dummy values (echelle)
-  //static constexpr gf::Vector2f ViewCenter(0.0f, 0.0f); // dummy values
-  // initialization
-  gf::Window window("Game", ScreenSize);
-  window.setVerticalSyncEnabled(true);
-  window.setFramerateLimit(60);
-  gf::RenderWindow renderer(window);
-  // views
-  gf::ViewContainer views;
-  //gf::ExtendView mainView(ViewCenter, ViewSize);
-  gf::FitView mainView;
-  views.addView(mainView);
-  //gf::ScreenView hudView;
-  //views.addView(hudView);
-  views.setInitialScreenSize(ScreenSize);
-  mainView.setSize({Ground::Width, Ground::Height});
-  // actions
-  gf::ActionContainer actions;
+	static constexpr gf::Vector2u ScreenSize(1024, 576);
+	static constexpr gf::Vector2f ViewSize(Ground::Width, Ground::Height);
+	static constexpr gf::Vector2f ViewCenter(0.0f, 0.0f);
+	//static constexpr gf::Vector2f ViewSize(400.0f,400.0f); // dummy values (echelle)
+	//static constexpr gf::Vector2f ViewCenter(0.0f, 0.0f); // dummy values
 
-  gf::Action closeWindowAction("Close window");
-  closeWindowAction.addCloseControl();
-  closeWindowAction.addKeycodeKeyControl(gf::Keycode::Escape);
-  actions.addAction(closeWindowAction);
+	// initialisation
 
-  gf::Action fullscreenAction("Fullscreen");
-  fullscreenAction.addKeycodeKeyControl(gf::Keycode::F);
-  actions.addAction(fullscreenAction);
+	gf::Window window("RPG", ScreenSize);
+	window.setVerticalSyncEnabled(true);
+	window.setFramerateLimit(60);
 
-  gf::Action leftAction("Left");
-  leftAction.addScancodeKeyControl(gf::Scancode::A);
-  leftAction.addScancodeKeyControl(gf::Scancode::Left);
-  leftAction.setContinuous();
-  actions.addAction(leftAction);
+	gf::RenderWindow renderer(window);
 
-  gf::Action rightAction("Right");
-  rightAction.addScancodeKeyControl(gf::Scancode::D);
-  rightAction.addScancodeKeyControl(gf::Scancode::Right);
-  rightAction.setContinuous();
-  actions.addAction(rightAction);
+	// Views
 
-  gf::Action upAction("Up");
-  upAction.addScancodeKeyControl(gf::Scancode::W);
-  upAction.addScancodeKeyControl(gf::Scancode::Up);
-  upAction.setContinuous();
-  actions.addAction(upAction);
+	gf::ViewContainer views;
 
-  gf::Action downAction("Down");
-  downAction.addScancodeKeyControl(gf::Scancode::S);
-  downAction.addScancodeKeyControl(gf::Scancode::Down);
-  downAction.setContinuous();
-  actions.addAction(downAction);
-  // entities
-  gf::EntityContainer mainEntities;
+	gf::ExtendView mainView(ViewCenter,ViewSize);
+	views.addView(mainView);
 
-  Ground ground;
-  mainEntities.addEntity(ground);
+	// HUD
+	gf::ScreenView hudView;
+	views.addView(hudView);
 
-  Square square(40.0f,gf::Color::Blue);
-  mainEntities.addEntity(square);
-  // add entities to mainEntities
-  gf::EntityContainer hudEntities;
-  // add entities to hudEntities
-  // game loop
-  renderer.clear(gf::Color::Yellow);
-  gf::Clock clock;
-  while (window.isOpen()) {
-    // 1. input
-    gf::Event event;
-    while (window.pollEvent(event)) {
-      actions.processEvent(event);
-      views.processEvent(event);
-    }
-    if (closeWindowAction.isActive()) {
-      window.close();
-    }
-    if (fullscreenAction.isActive()) {
-      window.toggleFullscreen();
-    }
-    if (rightAction.isActive()) {
-      // do something
-      square.move(Square::Move::Right);
-    } else if (leftAction.isActive()) {
-      // do something
-      square.move(Square::Move::Left);
-    } else if (upAction.isActive()) {
-      // do something
-      square.move(Square::Move::Up);
-    } else if (downAction.isActive()) {
-      // do something
-      square.move(Square::Move::Down);
-    } else {
-      // do something
-      square.move(Square::Move::Stop);
-    }
-    // 2. update
-    gf::Time time = clock.restart();
-    mainEntities.update(time);
-    hudEntities.update(time);
-    // 3. draw
-    renderer.clear();
-    renderer.setView(mainView);
-    mainEntities.render(renderer);
-    //renderer.setView(hudView);
-    //hudEntities.render(renderer);
-    renderer.display();
-    actions.reset();
-  }
-  return 0;
+	views.setInitialScreenSize(ScreenSize);
+
+	//actions
+
+	gf::ActionContainer actions;
+
+	gf::Action closeWindowAction("Close window");
+	closeWindowAction.addCloseControl();
+	closeWindowAction.addKeycodeKeyControl(gf::Keycode::Escape);
+	actions.addAction(closeWindowAction);
+
+	gf::Action fullscreenAction("Fullscreen");
+	fullscreenAction.addKeycodeKeyControl(gf::Keycode::F);
+	actions.addAction(fullscreenAction);
+
+	gf::Action leftAction("Left");
+	leftAction.addScancodeKeyControl(gf::Scancode::A);
+	leftAction.addScancodeKeyControl(gf::Scancode::Left);
+	leftAction.setContinuous();
+	actions.addAction(leftAction);
+
+	gf::Action rightAction("Right");
+	rightAction.addScancodeKeyControl(gf::Scancode::D);
+	rightAction.addScancodeKeyControl(gf::Scancode::Right);
+	rightAction.setContinuous();
+	actions.addAction(rightAction);
+
+	gf::Action upAction("Up");
+	upAction.addScancodeKeyControl(gf::Scancode::W);
+	upAction.addScancodeKeyControl(gf::Scancode::Up);
+	upAction.setContinuous();
+	actions.addAction(upAction);
+
+	gf::Action downAction("Down");
+	downAction.addScancodeKeyControl(gf::Scancode::S);
+	downAction.addScancodeKeyControl(gf::Scancode::Down);
+	downAction.setContinuous();
+	actions.addAction(downAction);
+
+	//Entities
+
+	gf::EntityContainer mainEntities;
+
+	// map
+	Ground map;
+	mainEntities.addEntity(map);
+
+	// square
+	Square square(ViewCenter,40.0f,gf::Color::Blue);
+	mainEntities.addEntity(square);
+
+	// HUD
+	gf::EntityContainer hudEntities;
+	//add entities to hudEntities
+
+	// background of the window
+	renderer.clear(gf::Color::Black);
+
+	// the clock
+	gf::Clock clock;
+
+	// game loop
+	while (window.isOpen()) {
+
+		// input
+		gf::Event event;
+
+		// Event on window
+		while (window.pollEvent(event)) {
+			actions.processEvent(event);
+			views.processEvent(event);
+		}
+		if (closeWindowAction.isActive())
+		{
+			window.close();
+		}
+		if (fullscreenAction.isActive()) {
+			window.toggleFullscreen();
+		}
+		// Move of the square
+		if (rightAction.isActive()) {
+		// do something
+			square.move(Square::Move::Right);
+		} else if (leftAction.isActive()) {
+		// do something
+			square.move(Square::Move::Left);
+		} else if (upAction.isActive()) {
+		// do something
+			square.move(Square::Move::Up);
+		} else if (downAction.isActive()) {
+		// do something
+			square.move(Square::Move::Down);
+		} else {
+		// do something
+			square.move(Square::Move::Stop);
+		}
+
+		// update
+
+		gf::Time time = clock.restart();
+
+		// update of entities
+		mainEntities.update(time);
+		hudEntities.update(time);
+
+		// draw
+
+		renderer.clear();
+		renderer.setView(mainView);
+		mainEntities.render(renderer);
+		renderer.setView(hudView);
+		hudEntities.render(renderer);
+		renderer.display();
+		actions.reset();
+
+	}
+
+	return 0;
 }
