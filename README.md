@@ -8,4 +8,4 @@ install.sh permet de lancer la commande cmake pour generer le makefile et lance 
 
 full_install.sh execute les deux fichier d'install...
 
-Pour simplement compiler et tester : executer install.sh
+Pour simplement compiler et tester : executer install.sh (modif chemin)
