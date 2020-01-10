@@ -14,7 +14,7 @@ class Square : public gf::Entity
 {
 
 public:
-	static constexpr float Velocity = 75.0f;
+	static constexpr float Velocity = 150.0f;
 	enum class Move{
 		Up,
 		Stop,
