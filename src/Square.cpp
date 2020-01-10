@@ -4,6 +4,7 @@
 #include <gf/Unused.h>
 
 #include "../include/Square.h"
+#include "../include/Ground.h"
 
 Square::Square(gf::Vector2f position,float size, gf::Color4f color)
 : m_position(position)
@@ -20,25 +21,25 @@ void Square::update(gf::Time time){
 
 	switch(m_move){
 		case Move::Up:
-			if (m_position.y > -300.0f)
+			if (m_position.y > -(Ground::Height/2 - m_size/2))
 			{
 				m_position.y -= Velocity * dt;
 			}
 			break;
 		case Move::Down:
-			if (m_position.y < 300.0f)
+			if (m_position.y < (Ground::Height/2- m_size/2))
 			{
 				m_position.y += Velocity * dt;
 			}
 			break;
 		case Move::Right:
-			if (m_position.x < 200.0f)
+			if (m_position.x < (Ground::Width/2 - m_size/2))
 			{
 				m_position.x += Velocity * dt;
 			}
 			break;
 		case Move::Left:
-			if (m_position.x > -200.0f)
+			if (m_position.x > -(Ground::Width/2 - m_size/2))
 			{
 				m_position.x -= Velocity * dt;				
 			}

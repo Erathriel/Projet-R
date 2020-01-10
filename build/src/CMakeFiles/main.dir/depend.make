@@ -4,6 +4,7 @@
 src/CMakeFiles/main.dir/Ground.cpp.o: ../include/Ground.h
 src/CMakeFiles/main.dir/Ground.cpp.o: ../src/Ground.cpp
 
+src/CMakeFiles/main.dir/Square.cpp.o: ../include/Ground.h
 src/CMakeFiles/main.dir/Square.cpp.o: ../include/Square.h
 src/CMakeFiles/main.dir/Square.cpp.o: ../src/Square.cpp
 

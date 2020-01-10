@@ -7,8 +7,8 @@
 class Ground : public gf::Entity
 {
 public:
-	static constexpr float Width = 2000.0f;
-	static constexpr float Height = 1000.0f;
+	static constexpr float Width = 2048.0f;
+	static constexpr float Height = 1152.0f;
 
 	Ground();
 
