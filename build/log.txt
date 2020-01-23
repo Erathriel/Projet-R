@@ -1,3 +1,17 @@
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Looking for pthread.h
 -- Looking for pthread.h - found
 -- Looking for pthread_create
@@ -11,6 +25,8 @@
 -- Found the following Boost libraries:
 --   filesystem
 --   system
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.9.1") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/lo41/Bureau/Projet-R/build
@@ -22,11 +38,7 @@ make -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/depend
 make[2] : on entre dans le répertoire « /home/lo41/Bureau/Projet-R/build »
 cd /home/lo41/Bureau/Projet-R/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/lo41/Bureau/Projet-R /home/lo41/Bureau/Projet-R/src /home/lo41/Bureau/Projet-R/build /home/lo41/Bureau/Projet-R/build/src /home/lo41/Bureau/Projet-R/build/src/CMakeFiles/main.dir/DependInfo.cmake --color=
 Dependee "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/main.dir/DependInfo.cmake" is newer than depender "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/main.dir/depend.internal".
-Dependee "/home/lo41/Bureau/Projet-R/include/Ground.h" is newer than depender "src/CMakeFiles/main.dir/Ground.cpp.o".
-Dependee "/home/lo41/Bureau/Projet-R/src/Ground.cpp" is newer than depends file "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/main.dir/depend.internal".
-Dependee "/home/lo41/Bureau/Projet-R/src/Square.cpp" is newer than depender "src/CMakeFiles/main.dir/Square.cpp.o".
-Dependee "/home/lo41/Bureau/Projet-R/src/main.cpp" is newer than depender "src/CMakeFiles/main.dir/main.cpp.o".
-Clearing dependencies in "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/main.dir/depend.make".
+Dependee "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/lo41/Bureau/Projet-R/build/src/CMakeFiles/main.dir/depend.internal".
 Scanning dependencies of target main
 make[2] : on quitte le répertoire « /home/lo41/Bureau/Projet-R/build »
 make -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
