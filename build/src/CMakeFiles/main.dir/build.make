@@ -109,13 +109,10 @@ src/main: src/CMakeFiles/main.dir/Square.cpp.o
 src/main: src/CMakeFiles/main.dir/Ground.cpp.o
 src/main: src/CMakeFiles/main.dir/main.cpp.o
 src/main: src/CMakeFiles/main.dir/build.make
-src/main: /usr/local/lib/libgf0.so.0.14.0
-src/main: /usr/lib/x86_64-linux-gnu/libSDL2.so
-src/main: /usr/lib/x86_64-linux-gnu/libfreetype.so
-src/main: /usr/local/lib/libgfcore0.so.0.14.0
+src/main: /usr/local/lib/libgf0.so.0.15.0
+src/main: /usr/local/lib/libgfcore0.so.0.15.0
 src/main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 src/main: /usr/lib/x86_64-linux-gnu/libboost_system.so
-src/main: /usr/lib/x86_64-linux-gnu/libz.so
 src/main: src/CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lo41/Bureau/Projet-R/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
 	cd /home/lo41/Bureau/Projet-R/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)

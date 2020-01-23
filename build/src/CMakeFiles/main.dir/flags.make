@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG
 
 CXX_DEFINES = -DGF_SHARED
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -isystem /usr/local/include 
 
